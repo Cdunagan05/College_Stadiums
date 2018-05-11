@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
+  get '/user_page' => 'users#index'
 end
