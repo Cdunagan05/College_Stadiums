@@ -17,4 +17,21 @@ RSpec.describe 'User can login' do
     expect(current_path).to eq(user_page_path)
     expect(User.all.first.email).to eq("chase@gmail.com")
   end
+
+  scenario 'User cannot login with wrong info' do
+    user = User.create(email: "chase@gmail.com", username: "chaser", password: "texas")
+
+    visit "/"
+    click_on "Login"
+
+    expect(current_path).to eq(login_path)
+
+    fill_in "email", :with => "chase@gmail.com"
+    fill_in "username", :with => "jon"
+    fill_in "password", :with => "texas"
+    click_on "Submit"
+
+    expect(current_path).to eq(login_path)
+    expect(User.all.first.email).to eq("chase@gmail.com")
+  end
 end
