@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+ form.new_user {
+   margin: 10px auto 10px auto;
+   border: 5px solid #dcdcdc;
+   border-radius: 10px;
+   text-align: center;
+   width: 400px;
+ }
+
+ .sign-up-form {
+   border-bottom: 1px solid #efefef;
+   margin: 10px;
+   padding-bottom: 10px;
+   width: 260px;
+   height: 25px;
+ }
+
+ .sign-up-form-title {
+   float: left;
+   width: 100px;
+   text-align: center;
+   padding-right: 10px;
+ }
+
+ .pw-confirmation {
+   text-align: justify;
+ }
+
+ .sign-up-real-title {
+   text-align: center;
+ }
