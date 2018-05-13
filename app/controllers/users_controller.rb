@@ -13,8 +13,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def index
-    
+  def show
+
   end
 
   def user_params
