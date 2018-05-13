@@ -44,3 +44,29 @@
  .sign-up-real-title {
    text-align: center;
  }
+
+ .homepage-text {
+   border: 5px solid;
+   position: absolute;
+   width: 300px;
+   height: 200px;
+   z-index: 15;
+   top: 50%;
+   left: 50%;
+   margin: -100px 0 0 -150px;
+   text-align: center;
+ }
+
+ .signup-button {
+   font-weight: bold;
+   font-size: 16px;
+   color: #FFF;
+ }
+
+ .front-page-text {
+   font-weight: bold;
+   font-size: 16px;
+   color: #FFF;
+   background-color: #C16A03;
+   padding: 12px;
+ }
