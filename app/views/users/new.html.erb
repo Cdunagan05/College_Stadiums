@@ -1,17 +1,23 @@
-<h2>Sign up here!</h2>
+
 
 <%= form_for @user do |f| %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <h2 class="sign-up-real-title">Sign up here!</h2>
+  <div class="sign-up-form">
+    <%= f.label :email,  :class => 'sign-up-form-title' %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="sign-up-form">
+    <%= f.label :username,  :class => 'sign-up-form-title' %>
+    <%= f.text_field :username %>
+  </div>
+  <div class="sign-up-form">
+    <%= f.label :password,  :class => 'sign-up-form-title' %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="sign-up-form">
+    <%= f.label :password_confirmation, "Confirm Password",  :class => 'sign-up-form-title' %>
+    <%= f.password_field :password_confirmation, :class => 'pw-confirmation' %>
+  </div>
 
   <%= f.submit %>
 <% end %>

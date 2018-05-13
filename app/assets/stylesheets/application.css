@@ -13,3 +13,64 @@
  *= require_tree .
  *= require_self
  */
+
+ form.new_user {
+   margin: 10px auto 10px auto;
+   border: 5px solid #dcdcdc;
+   border-radius: 10px;
+   text-align: center;
+   width: 400px;
+ }
+
+ .sign-up-form {
+   border-bottom: 1px solid #efefef;
+   margin: 10px;
+   padding-bottom: 10px;
+   width: 260px;
+   height: 25px;
+ }
+
+ .sign-up-form-title {
+   float: left;
+   width: 100px;
+   text-align: center;
+   padding-right: 10px;
+ }
+
+ .pw-confirmation {
+   text-align: justify;
+ }
+
+ .sign-up-real-title {
+   text-align: center;
+ }
+
+ .homepage-text {
+   border: 5px solid;
+   position: absolute;
+   background-color: #C16A03;
+   width: 300px;
+   height: 200px;
+   z-index: 15;
+   top: 50%;
+   left: 50%;
+   margin: -100px 0 0 -150px;
+   text-align: center;
+ }
+
+ .signup-button {
+   font-weight: bold;
+   font-size: 32px;
+   color: #FFF;
+ }
+
+ .front-page-text {
+   font-weight: bold;
+   font-size: 16px;
+   color: #FFF;
+   background-color: #C16A03;
+   padding: 12px;
+ }
+
+ .homepage-body {
+ }
