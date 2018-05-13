@@ -48,6 +48,7 @@
  .homepage-text {
    border: 5px solid;
    position: absolute;
+   background-color: #C16A03;
    width: 300px;
    height: 200px;
    z-index: 15;
@@ -59,7 +60,7 @@
 
  .signup-button {
    font-weight: bold;
-   font-size: 16px;
+   font-size: 32px;
    color: #FFF;
  }
 
@@ -69,4 +70,7 @@
    color: #FFF;
    background-color: #C16A03;
    padding: 12px;
+ }
+
+ .homepage-body {
  }
