@@ -15,6 +15,7 @@ RSpec.describe 'User can login' do
 
     expect(current_path).to eq(user_page_path)
     expect(User.all.first.email).to eq("chase@gmail.com")
+    expect(page).to have_content("chaser")
   end
 
   scenario 'User cannot login with wrong email' do
