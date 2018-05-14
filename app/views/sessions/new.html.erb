@@ -1,7 +1,7 @@
 <%= flash[:warning] %>
-<h2 class="sign-up-real-title">Login here!</h2>
 
 <%= form_tag login_path, class: 'new_user' do %>
+  <h2 class="sign-up-real-title">Login here!</h2>
   <div class="login-form">
     <%= label_tag :email, nil, :class => 'login' %>
     <%= text_field_tag :email %>
