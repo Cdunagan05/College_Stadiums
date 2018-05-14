@@ -11,7 +11,7 @@ RSpec.describe "When a user is logged in" do
 
     fill_in "email", :with => "taxi@ut.edu"
     fill_in "password", :with => "Taxisforlife"
-    click_on "Submit"
+    click_on "Login"
 
     expect(current_path).to eq(user_page_path)
 

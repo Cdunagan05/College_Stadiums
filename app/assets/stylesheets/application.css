@@ -15,7 +15,7 @@
  */
 
  form.new_user {
-   margin: 10px auto 10px auto;
+   margin: 100px auto 100px auto;
    border: 5px solid #dcdcdc;
    border-radius: 10px;
    text-align: center;
@@ -30,7 +30,22 @@
    height: 25px;
  }
 
+ .login-form {
+   border-bottom: 1px solid #efefef;
+   margin: 10px;
+   padding-bottom: 10px;
+   width: 260px;
+   height: 25px;
+ }
+
  .sign-up-form-title {
+   float: left;
+   width: 100px;
+   text-align: center;
+   padding-right: 10px;
+ }
+
+ .login {
    float: left;
    width: 100px;
    text-align: center;
@@ -66,10 +81,23 @@
 
  .front-page-text {
    font-weight: bold;
+   font-family: sans-serif;
    font-size: 16px;
    color: #FFF;
    background-color: #C16A03;
    padding: 12px;
+ }
+
+ .submit-button {
+   background: #0066A2;
+   color: white;
+   border-style: outset;
+   border-radius: 10px;
+   border-color: #0066A2;
+   height: 40px;
+   width: 100px;
+   font: bold 15px arial, sans-serif;
+   text-shadow:none;
  }
 
  .homepage-body {
