@@ -7,6 +7,16 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'capybara/rails'
 
+def stub_logged_in_user
+  user = User.create(email: 'chaser@utexas.edu', username: 'chaser', password: 'texas')
+  visit '/'
+  click_on 'Login'
+  fill_in "email", :with => "chaser@utexas.edu"
+  fill_in "password", :with => "texas"
+  click_on "Login"
+  user.reload
+end
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
