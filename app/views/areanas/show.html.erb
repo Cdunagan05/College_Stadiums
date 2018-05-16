@@ -1,1 +1,11 @@
 <p2><%= @areana.name %> stadium </p2>
+<div class="dropdown">
+  <button class="dropbtn">Rate</button>
+  <div class="dropdown_content">
+    <a href="/areanas/'#{@areana.id}'/ratings">5 Stars</a>
+    <a href="/areanas/'#{@areana.id}'/ratings">4 Stars</a>
+    <a href="/areanas/'#{@areana.id}'/ratings">3 Stars</a>
+    <a href="/areanas/'#{@areana.id}'/ratings">2 Stars</a>
+    <a href="/areanas/'#{@areana.id}'/ratings">1 Stars</a>
+  </div>
+</div>
