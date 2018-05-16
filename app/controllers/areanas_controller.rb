@@ -1,7 +1,7 @@
-class StadiumsController < ApplicationController
+class AreanasController < ApplicationController
 
   def show
-    @stadium = Stadium.find(params[:id])
+    @areana = Areana.find(params[:id])
   end
 
   def index
