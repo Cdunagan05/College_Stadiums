@@ -2,7 +2,8 @@ class RatingsController < ApplicationController
 
   def create
     areana = Areana.find(params[:areana_id])
-    areana.ratings.create(rating_params)
+    areana.ratings.create(ratings_params)
+
 
     redirect_to areana_path(areana)
   end
@@ -10,7 +11,7 @@ class RatingsController < ApplicationController
   private
 
   def ratings_params
-    params.permit(:score, :user_id, :listing_id)
+    params.permit(:score, :user_id, :areana_id)
   end
 
 end

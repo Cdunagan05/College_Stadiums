@@ -2,10 +2,14 @@
 <div class="dropdown">
   <button class="dropbtn">Rate</button>
   <div class="dropdown_content">
-    <a href="/areanas/'#{@areana.id}'/ratings">5 Stars</a>
-    <a href="/areanas/'#{@areana.id}'/ratings">4 Stars</a>
-    <a href="/areanas/'#{@areana.id}'/ratings">3 Stars</a>
-    <a href="/areanas/'#{@areana.id}'/ratings">2 Stars</a>
-    <a href="/areanas/'#{@areana.id}'/ratings">1 Stars</a>
+    <%= link_to "5 Stars", "/areanas/#{@areana.id}/ratings", data: {score: "5"}, method: :post %>
+    <a class="5star" href="/areanas/'#{@areana.id}'/ratings">4 Stars</a>
+    <a class="5star" href="/areanas/'#{@areana.id}'/ratings">3 Stars</a>
+    <a class="5star" href="/areanas/'#{@areana.id}'/ratings">2 Stars</a>
+    <a class="5star" href="/areanas/'#{@areana.id}'/ratings">1 Stars</a>
   </div>
+</div>
+
+<div class="stadium-rating">
+  <h3> The average rating of this stadium is <% @areana.ratings.first %> </h3>
 </div>
