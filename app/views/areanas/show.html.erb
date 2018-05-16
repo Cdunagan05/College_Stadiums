@@ -1,15 +1,30 @@
 <p2><%= @areana.name %> stadium </p2>
-<div class="dropdown">
+<!--<div class="dropdown">
   <button class="dropbtn">Rate</button>
   <div class="dropdown_content">
-    <%= link_to "5 Stars", "/areanas/#{@areana.id}/ratings", data: {score: "5"}, method: :post %>
+    <%= link_to "5 Stars", "/areanas/#{@areana.id}/ratings", remote: true, params: {score: "5"}, method: :post %>
     <a class="5star" href="/areanas/'#{@areana.id}'/ratings">4 Stars</a>
     <a class="5star" href="/areanas/'#{@areana.id}'/ratings">3 Stars</a>
     <a class="5star" href="/areanas/'#{@areana.id}'/ratings">2 Stars</a>
     <a class="5star" href="/areanas/'#{@areana.id}'/ratings">1 Stars</a>
   </div>
-</div>
+</div>-->
+<!--<form action="/areanas/@areana.id/ratings" id="rating-form" method="post">
+  <input type="submit" value="submit">
+</form>-->
+<%= form_for ([@areana, @rating]) do |f| %>
+<select name="score" id="rating-list">
+  <option value="5_Star" step="4" type="number">5 Stars</option>
+  <option value="4_stars">4 Stars</option>
+  <option value="3_stars">3 Stars</option>
+  <option value="2_stars">2 Stars</option>
+  <option value="1_stars">1 Star</option>
+</select>
+
+<%= f.hidden_field :user_id, {value: current_user.id} %>
+<%= f.submit "submit"%>
+<% end %>
 
 <div class="stadium-rating">
-  <h3> The average rating of this stadium is <% @areana.ratings.first %> </h3>
+  <h3> The average rating of this stadium is <%= @areana.average_rating %> </h3>
 </div>
