@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180514053050) do
+ActiveRecord::Schema.define(version: 20180516011234) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "areanas", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "capacity"
+    t.string   "state"
+    t.string   "city"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text     "body"
@@ -21,16 +30,6 @@ ActiveRecord::Schema.define(version: 20180514053050) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
-  end
-
-  create_table "stadiums", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "capacity"
-    t.string   "state"
-    t.string   "city"
-    t.integer  "rating"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
