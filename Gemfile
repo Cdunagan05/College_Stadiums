@@ -37,6 +37,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'poltergeist'
+  gem 'jasmine'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'simplecov', require: false
