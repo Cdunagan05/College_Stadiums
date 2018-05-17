@@ -4,5 +4,6 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates_confirmation_of :password
   has_many :comments
+  has_many :ratings
   has_secure_password
 end
