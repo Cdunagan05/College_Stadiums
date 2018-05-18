@@ -6,7 +6,7 @@ class AreanasController < ApplicationController
   end
 
   def index
-
+    @areanas = Areana.all
   end
 
   def new

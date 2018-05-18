@@ -8,7 +8,7 @@ RSpec.describe 'When a user visits the areanas page' do
 
     stub_logged_in_user
 
-    visit arenas_path
+    visit areanas_path
 
     expect(page).to have_content("DKR")
     expect(page).to have_content("The Horse Shoe")
