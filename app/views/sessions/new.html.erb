@@ -2,17 +2,19 @@
 
 <%= form_tag login_path, class: 'new_user' do %>
   <h2 class="sign-up-real-title">Login here!</h2>
-  <div class="login-form">
-    <%= label_tag :email, nil, :class => 'login' %>
-    <%= text_field_tag :email %>
-  </div>
-  <div class="login-form">
-    <%= label_tag :username, nil,  :class => 'login' %>
-    <%= text_field_tag :username %>
-  </div>
-  <div class="login-form">
-    <%= label_tag :password, nil,  :class => 'login' %>
-    <%= password_field_tag :password %>
-  </div>
+  <table class="log">
+    <tr class="login-form-row">
+    <td><%= label_tag :email, nil, :class => 'login' %></td>
+    <td><%= text_field_tag :email %></td>
+</tr>
+<tr class="login-form-row">
+    <td><%= label_tag :username, nil,  :class => 'login' %></td>
+    <td><%= text_field_tag :username %></td>
+</tr>
+<tr class="login-form-row">
+    <td><%= label_tag :password, nil,  :class => 'login' %></td>
+    <td><%= password_field_tag :password %></td>
+</tr>
+</table>
   <%= submit_tag "Login", class: 'submit-button' %>
 <% end %>

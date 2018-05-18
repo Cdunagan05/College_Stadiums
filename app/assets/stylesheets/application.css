@@ -30,12 +30,26 @@
    height: 25px;
  }
 
+ .login-text {
+   text-align: center;
+ }
+
+ .log {
+   width: 390px;
+ }
+
+ .login-form-d {
+
+ }
+
+
+
  .login-form {
    border-bottom: 1px solid #efefef;
    margin: 10px;
    padding-bottom: 10px;
    width: 260px;
-   height: 25px;
+   /* height: 25px; */
  }
 
  .sign-up-form-title {
@@ -47,7 +61,7 @@
 
  .login {
    float: left;
-   width: 100px;
+   width: 143px;
    text-align: center;
    padding-right: 10px;
  }
