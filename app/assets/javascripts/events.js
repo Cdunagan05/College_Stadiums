@@ -12,7 +12,7 @@ $(document).ready(function(){
   $(".card").hide();
 
   $("h1").click(function() {
-    $(".card:contains(Bowl)").toggle();
+      $(".card:contains(Texas)").toggle();
   });
   $("h2").click(function() {
     $(".card:contains(Miami)").toggle();

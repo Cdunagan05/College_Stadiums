@@ -6,21 +6,21 @@
 <div class="container" id="how">
   <div class="row">
 <% @areanas.each do |a| %>
-<div class="col-sm">
-<div class="card" style="width: 18rem;">
-  <div class="card-header">
-    <%= a.name %>
+  <div class="col-sm">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <%= a.name %>
+      </div>
+        <img class="card-img-top" src="http://www.levisstadium.com/wp-content/uploads/2015/09/5D33993-e1442951857632-800x400.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Capacity: <%= a.capacity %></h5>
+      <h6 class="card-title">Location: <%= a.city %>, <%= a.state %></h6>
+      <p class="card-text">This is where more stadium information will go.</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn btn-primary">Visit Page</a>
+    </div>
   </div>
-  <img class="card-img-top" src="http://www.levisstadium.com/wp-content/uploads/2015/09/5D33993-e1442951857632-800x400.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Capacity: <%= a.capacity %></h5>
-    <h6 class="card-title">Location: <%= a.city %>, <%= a.state %></h6>
-    <p class="card-text">This is where more stadium information will go.</p>
-  </div>
-  <div class="card-footer">
-    <a href="#" class="btn btn-primary">Visit Page</a>
-  </div>
-</div>
 </div>
 <% end %>
 </div>
