@@ -7,6 +7,15 @@ $(document).ready(function(){
   //   })
   // })
 
-  $("#carouselExampleIndicators").carousel();
+  // $("#carouselExampleIndicators").carousel();
+
+  $(".card").hide();
+
+  $("h1").click(function() {
+    $(".card:contains(Bowl)").toggle();
+  });
+  $("h2").click(function() {
+    $(".card:contains(Miami)").toggle();
+  });
 
 });
