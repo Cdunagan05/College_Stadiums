@@ -9,13 +9,13 @@ $(document).ready(function(){
 
   // $("#carouselExampleIndicators").carousel();
 
-  $(".card").hide();
+  $(".col-sm").hide();
 
   $("h1").click(function() {
-      $(".card:contains(Texas)").toggle();
+      $(".col-sm:contains(Texas)").toggle();
   });
   $("h2").click(function() {
-    $(".card:contains(Miami)").toggle();
+    $(".col-sm:contains(Miami)").toggle();
   });
 
 });
