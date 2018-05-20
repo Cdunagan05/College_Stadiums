@@ -9,13 +9,13 @@ RSpec.describe "When I go to a stadium show page" do
 
     expect(page).to have_content("Texas Stadium")
 
-    fill_in "comment", with: "This is a comment, I hope it works!"
-    click_on "Submit"
+    fill_in "Comment", with: "This is a comment, I hope it works!"
+    click_on "Add Comment"
 
     expect(page).to have_content("Texas Stadium")
     expect(page).to have_content("This is a comment, I hope it works!")
-    expect(stadium_1.comments.first).to eq("This is a comment, I hope it works!")
-    expect(user_1.comments.first).to eq("This is a comment, I hope it works!")
+    expect(stadium_1.comments.first.body).to eq("This is a comment, I hope it works!")
+    expect(user_1.comments.first.body).to eq("This is a comment, I hope it works!")
 
   end
 end
