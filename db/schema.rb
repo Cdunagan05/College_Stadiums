@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180516013807) do
+ActiveRecord::Schema.define(version: 20180520012311) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20180516013807) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "areana_id"
+    t.index ["areana_id"], name: "index_comments_on_areana_id", using: :btree
     t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
@@ -51,6 +53,7 @@ ActiveRecord::Schema.define(version: 20180516013807) do
     t.integer  "role"
   end
 
+  add_foreign_key "comments", "areanas"
   add_foreign_key "comments", "users"
   add_foreign_key "ratings", "areanas"
   add_foreign_key "ratings", "users"

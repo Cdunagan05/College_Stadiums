@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   resources :areanas do
     resources :ratings, only: [:create]
+    resources :comments, only: [:create, :edit, :update, :destroy]
   end
 end
