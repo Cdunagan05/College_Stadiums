@@ -11,10 +11,10 @@ $(document).ready(function(){
 
   $(".col-sm").hide();
 
-  $("h1").click(function() {
+  $("#Big12").click(function() {
       $(".col-sm:contains(Texas)").toggle();
   });
-  $("h2").click(function() {
+  $("#ACC").click(function() {
     $(".col-sm:contains(Miami)").toggle();
   });
 
