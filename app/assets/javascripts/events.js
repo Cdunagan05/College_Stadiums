@@ -12,7 +12,7 @@ $(document).ready(function(){
   $(".col-sm").hide();
 
   $("#Big12").click(function() {
-      $(".col-sm:contains(Big 12)").toggle();
+    $(".col-sm:contains(Big 12)").toggle();
   });
   $("#ACC").click(function() {
     $(".col-sm:contains(ACC)").toggle();
@@ -30,13 +30,13 @@ $(document).ready(function(){
     $(".col-sm:contains(Pac 12)").toggle();
   });
   $("#Mtwest").click(function() {
-      $(".col-sm:contains(Mountain West)").toggle();
+    $(".col-sm:contains(Mountain West)").toggle();
   });
   $("#Sunbelt").click(function() {
     $(".col-sm:contains(Sun Belt)").toggle();
   });
   $("#Mac").click(function() {
-      $(".col-sm:contains(MAC)").toggle();
+    $(".col-sm:contains(MAC)").toggle();
   });
   $("#CUSA").click(function() {
     $(".col-sm:contains(Conference USA)").toggle();

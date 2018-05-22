@@ -153,3 +153,13 @@
  .dropdown:hover .dropbtn {
    background-color: #3e8e41;
  }
+
+ .highlight {
+    background: #ff0;
+}
+
+ .location-card {
+   text-overflow: ellipsis;
+   max-height: 24px;
+   font-size: 14px; 
+ }
