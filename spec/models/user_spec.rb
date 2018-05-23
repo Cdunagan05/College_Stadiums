@@ -8,4 +8,6 @@ RSpec.describe User, type: :model do
 
   it { should have_many(:comments)}
   it { should have_many(:ratings)}
+  it { should have_many(:bucketlists)}
+  it { should have_many(:areanas)}
 end
