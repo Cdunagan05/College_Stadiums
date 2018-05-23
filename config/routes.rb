@@ -14,4 +14,6 @@ Rails.application.routes.draw do
     resources :ratings, only: [:create]
     resources :comments, only: [:create, :edit, :update, :destroy]
   end
+
+  resources :bucketlists, only: [:create, :destroy]
 end
