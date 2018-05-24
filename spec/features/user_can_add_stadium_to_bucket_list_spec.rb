@@ -9,7 +9,10 @@ RSpec.describe "When a user clicks on add to bucketlist" do
 
     click_on "Add to Bucketlist"
 
-
     expect(user.areanas.first.name).to eq("The Rose Bowl")
+
+    visit user_page_path
+
+    expect(page).to have_content("The Rose Bowl")
   end
 end
