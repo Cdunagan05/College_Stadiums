@@ -32,7 +32,7 @@
     <div class="col-md-6">
       <%= form_for ([@areana, @rating]) do |f| %>
         <select name="score" id="rating-list">
-          <option value="5_Star">5 Stars</option>
+          <option value="5_Star" step="4" type="number">5 Stars</option>
           <option value="4_Star">4 Stars</option>
           <option value="3_Star">3 Stars</option>
           <option value="2_Star">2 Stars</option>
@@ -47,27 +47,29 @@
       <h3> The average rating of this stadium is <%= @areana.average_rating %> </h3>
     </div>
 
-    <div>
-      <% @areana.comments.each do |c|  %>
-      <p> <%= c.body %> </p>
-      <% end %>
-    </div>
-
-    <div class="comment-on-areana">
-      <%= form_for ([@areana, @areana.comments.build]) do |f| %>
-
-      <%= f.label :body, 'Comment' %>
-      <%= f.text_area :body %>
-
-      <%= f.submit "Add Comment" %>
-      <% end  %>
-    </div>
 
     <div>
       <form action="/bucketlists" method="post">
         <button name="bucket" value="bucketlist">Add to Bucketlist</button>
+        <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
       </form>
     </div>
     </div>
   </div>
+</div>
+
+<div>
+  <% @areana.comments.each do |c|  %>
+  <p> <%= c.body %> </p>
+  <% end %>
+</div>
+
+<div class="comment-on-areana">
+  <%= form_for ([@areana, @areana.comments.build]) do |f| %>
+
+  <%= f.label :body, 'Comment' %>
+  <%= f.text_area :body %>
+
+  <%= f.submit "Add Comment" %>
+  <% end  %>
 </div>
