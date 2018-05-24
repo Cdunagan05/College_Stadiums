@@ -1,4 +1,6 @@
 class BucketlistsController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def create
     areana = Areana.find(bucketlist_params["areana_id"])
     bucketlist = areana.bucketlists.create(user_id: current_user.id)
