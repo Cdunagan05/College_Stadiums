@@ -7,10 +7,10 @@ RSpec.describe 'When a user visits a stadium page' do
 
     visit "/areanas/#{areana_1.id}"
 
-    find('#rating-list').find(:xpath, 'option[1]').select_option
+    find('#rating-list').find(:xpath, 'option[3]').select_option
     click_on "submit"
 
     expect(current_path).to eq("/areanas/#{areana_1.id}")
-    expect(page).to have_content("The average rating of this stadium is 5 Stars")
+    expect(page).to have_content("The average rating of this stadium is 3 Stars")
   end
 end
