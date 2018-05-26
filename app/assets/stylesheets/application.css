@@ -161,5 +161,17 @@
  .location-card {
    text-overflow: ellipsis;
    max-height: 24px;
-   font-size: 14px; 
+   font-size: 14px;
+ }
+
+ #card-texts {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+ #location-card-text {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
  }

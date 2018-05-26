@@ -22,9 +22,9 @@
         <img class="card-img-top" src="http://www.levisstadium.com/wp-content/uploads/2015/09/5D33993-e1442951857632-800x400.jpg" alt="Card image cap">
     <div class="card-body">
       <p class="card-title"><b>Capacity: <%= a.capacity %></b></p>
-      <p class="location-card"><b>Location: <%= a.city %>, <%= a.state %></b><p>
+      <p class="location-card" id="location-card-text"><b>Location: <%= a.city %>, <%= a.state %></b><p>
       <p class="card-title"><b>Conference: <%= a.conference %></b><p>
-      <p class="card-text">This is where more stadium information will go.</p>
+      <p class="card-text" id="card-texts">This is where more stadium information will go and I need to make sure it doesn't go on forever.</p>
     </div>
     <div class="card-footer">
       <a href="/areanas/<%= a.id %>" class="btn btn-primary" id="<%= a.id %>">Visit Page</a>
