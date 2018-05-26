@@ -175,3 +175,28 @@
    overflow: hidden;
    text-overflow: ellipsis;
  }
+
+ .all-stadium-toggle-btns {
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+ .navbar-unordered {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+ }
+
+ .navbar-unordered li {
+   float: left;
+ }
+
+ .navbar-unordered li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
