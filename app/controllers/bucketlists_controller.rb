@@ -3,7 +3,7 @@ class BucketlistsController < ApplicationController
 
   def create
     areana = Areana.find(bucketlist_params["areana_id"])
-    bucketlist = areana.bucketlists.create(user_id: current_user.id)
+    areana.bucketlists.create(user_id: current_user.id) unless current_user.in_bucketlist?(areana)
 
     redirect_to "/areanas/#{areana.id}"
   end
