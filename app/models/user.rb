@@ -8,4 +8,8 @@ class User < ApplicationRecord
   has_many :bucketlists
   has_many :areanas, through: :bucketlists
   has_secure_password
+
+  def in_bucketlist?(areana)
+    areanas.exists?(name: areana.name)
+  end
 end

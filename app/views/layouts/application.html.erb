@@ -21,10 +21,14 @@
             <a href="/signup">Sign Up</a>
           </li>
           <li>
-            <a href="/login">Login Now</a>
+            <% if current_user %>
+              <%= link_to "Signout", logout_path, method: "delete" %>
+            <% else %>
+              <a href="/login">Login Now</a>
+            <% end  %>
           </li>
           <li>
-            <a href="/userpage">Home</a>
+            <a href="/user_page">Home</a>
           </li>
         </ul>
     <%= yield %>
