@@ -3,7 +3,13 @@ class BucketlistsController < ApplicationController
 
   def create
     areana = Areana.find(bucketlist_params["areana_id"])
-    areana.bucketlists.create(user_id: current_user.id) unless current_user.in_bucketlist?(areana)
+    # areana.bucketlists.create(user_id: current_user.id) unless current_user.in_bucketlist?(areana)
+    if current_user.in_bucketlist?(areana)
+      flash[:error] = "This stadium is already in your Bucketlist!"
+    else
+      areana.bucketlists.create(user_id: current_user.id)
+      flash[:success] = "Added to your Bucketlist!"
+    end
 
     redirect_to "/areanas/#{areana.id}"
   end

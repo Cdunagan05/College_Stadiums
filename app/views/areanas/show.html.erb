@@ -49,6 +49,8 @@
 
 
     <div>
+      <%= flash[:success] %>
+      <%= flash[:error] %>
       <form action="/bucketlists" method="post">
         <button name="bucket" value="bucketlist">Add to Bucketlist</button>
         <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">

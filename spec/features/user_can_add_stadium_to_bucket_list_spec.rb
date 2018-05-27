@@ -28,7 +28,7 @@ RSpec.describe "When a user clicks on add to bucketlist" do
 
     click_on "Add to Bucketlist"
 
-    # expect(page).to have_content("Already in bucketlist")
+    expect(page).to have_content("This stadium is already in your Bucketlist!")
     expect(user.areanas.count).to eq(1)
   end
 end
