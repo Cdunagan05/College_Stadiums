@@ -18,4 +18,16 @@ RSpec.describe "When I go to a stadium show page" do
     expect(user_1.comments.first.body).to eq("This is a comment, I hope it works!")
 
   end
+
+  scenario "the user comment is not saved if nothing is written" do
+    stadium_1 = Areana.create(name: "Texas Stadium", capacity: 102000, state: "Texas", city: "Austin")
+    user_1 = stub_logged_in_user
+
+    visit "/areanas/#{stadium_1.id}"
+
+    fill_in "Comment", with: " "
+    click_on "Add Comment"
+
+    expect(stadium_1.comments.first.body).to eq(nil)
+  end
 end
