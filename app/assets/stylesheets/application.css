@@ -206,7 +206,7 @@
  }
 
  .comments-div {
-   width: 50%;
+   padding-right: 30px;
    padding-top: 10px;
  }
 
@@ -215,6 +215,9 @@
  }
 
  .comment-on-areana {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
    border-bottom: dashed;
    background: #ececec;
  }
