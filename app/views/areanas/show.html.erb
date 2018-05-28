@@ -60,14 +60,19 @@
   </div>
 </div>
 
-<div>
-  <% @areana.comments.each do |c|  %>
-  <p> <b><%= c.body %></b> </p>
-  <p> Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago </p>
-  <% end %>
+<div class="comments-div">
+  <ul class="comments-list">
+    <% @areana.comments.each do |c|  %>
+    <li class="comment-on-areana">
+      <p> <b><%= c.user.username %></b></p>
+      <p> <%= c.body %></p>
+      <p><sub>Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago</sub></p>
+      <% end %>
+    </li>
+  </ul>
 </div>
 
-<div class="comment-on-areana">
+<div>
   <%= form_for ([@areana, @areana.comments.build]) do |f| %>
 
   <%= f.label :body, 'Comment' %>
