@@ -64,7 +64,9 @@
   <ul class="comments-list">
     <% @areana.comments.each do |c|  %>
     <li class="comment-on-areana">
-      <p> <b><%= c.body %></b> <sub>Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago</sub></p>
+      <p> <b><%= c.user.username %></b></p>
+      <p> <%= c.body %></p>
+      <p><sub>Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago</sub></p>
       <% end %>
     </li>
   </ul>
