@@ -204,3 +204,17 @@
  li a:hover {
     background-color: #111;
  }
+
+ .comments-div {
+   width: 50%;
+   padding-top: 10px;
+ }
+
+ .comments-list {
+   list-style-type: none;
+ }
+
+ .comment-on-areana {
+   border-style: dashed;
+   background: #ececec;
+ }
