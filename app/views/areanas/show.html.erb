@@ -30,32 +30,36 @@
       </div>
     </div>
     <div class="col-md-6">
-      <%= form_for ([@areana, @rating]) do |f| %>
-        <select name="score" id="rating-list">
-          <option value="5_Star" step="4" type="number">5 Stars</option>
-          <option value="4_Star">4 Stars</option>
-          <option value="3_Star">3 Stars</option>
-          <option value="2_Star">2 Stars</option>
-          <option value="1_Star">1 Star</option>
-        </select>
+      <ul class="rate-stadium-list">
+        <li>
+          <p>Rate This Stadium</p>
+        </li>
+        <li>
+          <%= form_for ([@areana, @rating]) do |f| %>
+            <select name="score" id="rating-list">
+              <option value="5_Star" step="4" type="number">5 Stars</option>
+              <option value="4_Star">4 Stars</option>
+              <option value="3_Star">3 Stars</option>
+              <option value="2_Star">2 Stars</option>
+              <option value="1_Star">1 Star</option>
+            </select>
 
-        <%= f.hidden_field :user_id, {value: current_user.id} %>
-        <%= f.submit "submit"%>
-      <% end %>
-
-    <div class="stadium-rating">
-      <h3> The average rating of this stadium is <%= @areana.average_rating %> </h3>
-    </div>
-
-
-    <div>
-      <%= flash[:success] %>
-      <%= flash[:error] %>
-      <form action="/bucketlists" method="post">
-        <button name="bucket" value="bucketlist">Add to Bucketlist</button>
-        <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
-      </form>
-    </div>
+            <%= f.hidden_field :user_id, {value: current_user.id} %>
+            <%= f.submit "submit"%>
+          <% end %>
+        </li>
+        </li>
+          <p> The average rating of this stadium is <%= @areana.average_rating %> </p>
+        </li>
+        </li>
+          <%= flash[:success] %>
+          <%= flash[:error] %>
+          <form action="/bucketlists" method="post">
+            <button name="bucket" value="bucketlist">Add to Bucketlist</button>
+            <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
+          </form>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
