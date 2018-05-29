@@ -221,3 +221,7 @@
    border-bottom: dashed;
    background: #ececec;
  }
+
+ .rate-stadium-list {
+   list-style-type: none;
+ }
