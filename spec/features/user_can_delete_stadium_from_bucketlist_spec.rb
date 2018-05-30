@@ -12,7 +12,7 @@ RSpec.describe "When a user sees their bucketlist" do
 
     click_on "Remove"
 
-    expect(user.bucketlists).to eq(nil)
+    expect(user.bucketlists.count).to eq(0)
     expect(page).to_not have_content("The Rose Bowl")
   end
 end

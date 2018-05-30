@@ -7,7 +7,7 @@
     </tr>
     <tr>
       <% current_user.areanas.each do |f| %>
-        <p> <%= f.name %> </p>
+        <p> <%= f.name %> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></p>
       <% end  %>
     </tr>
   </table>
