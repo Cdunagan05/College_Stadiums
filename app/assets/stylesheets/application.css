@@ -225,3 +225,15 @@
  .rate-stadium-list {
    list-style-type: none;
  }
+
+ .bucketlist-table {
+   border-collapse: collapse;
+ }
+
+ .bucketlist-table tr td {
+   padding-right: 20px;
+ }
+
+ .bucketlist-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+ }
