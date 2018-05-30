@@ -1,14 +1,14 @@
 <h2> Welcome to your homepage, <%= current_user.username %>!</h2>
 
 <div>
-  <table>
+  <table class="bucketlist-table">
     <tr>
-      Stadiums in Bucketlist
+      <h5>Stadiums in Bucketlist</h5>
     </tr>
-    <tr>
       <% current_user.areanas.each do |f| %>
-        <p> <%= f.name %> </p>
+      <tr>
+        <td> <%= f.name %></td><td> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></td>
+      </tr>
       <% end  %>
-    </tr>
   </table>
 </div>
