@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
 
+  get '/game' => 'games#show'
+
   resources :areanas do
     resources :ratings, only: [:create]
     resources :comments, only: [:create, :edit, :update, :destroy]
