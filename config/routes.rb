@@ -17,5 +17,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :edit, :update, :destroy]
   end
 
+  resources :events, only: [:index]
+
   resources :bucketlists, only: [:create, :destroy]
 end
