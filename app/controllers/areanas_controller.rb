@@ -3,6 +3,7 @@ class AreanasController < ApplicationController
   def show
     @areana = Areana.find(params[:id])
     @rating = Rating.new(:areana => @areana)
+    @events = SeatgeekService.events
   end
 
   def index
