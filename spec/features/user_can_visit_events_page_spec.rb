@@ -7,6 +7,10 @@ RSpec.describe "SEATGEEK SERVICES" do
 
       visit areana_path(areana_1.id)
 
+      click_on "See Upcoming Games"
+
+      expect(current_path).to eq("")
+
       expect(page).to have_content("Fresno State at UCLA")
   end
 end

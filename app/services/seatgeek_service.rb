@@ -8,5 +8,8 @@ class SeatgeekService
   end
 
   def self.events
+    response.conn.get "/type=ncaa_football&q=UCLA&client_id=#{ENV['Client_ID']}"
+    hello = JSON.parse(response.body)
+    byebug
   end
 end
