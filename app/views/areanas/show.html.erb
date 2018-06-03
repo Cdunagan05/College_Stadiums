@@ -75,7 +75,7 @@
           </form>
         </li>
         <li>
-          <%= link_to "See Upcoming Games", events_path %>
+          <%= link_to "See Upcoming Games", events_path(:areana => "#{@areana.name}")  %>
         </li>
       </ul>
 

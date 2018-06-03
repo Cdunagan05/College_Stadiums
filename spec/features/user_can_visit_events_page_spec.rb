@@ -9,8 +9,8 @@ RSpec.describe "SEATGEEK SERVICES" do
 
       click_on "See Upcoming Games"
 
-      expect(current_path).to eq("")
+      expect(current_path).to eq("/events")
 
-      expect(page).to have_content("Fresno State at UCLA")
+      expect(page).to have_content("Fresno State Bulldogs at UCLA Bruins")
   end
 end
