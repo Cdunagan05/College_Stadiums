@@ -8,7 +8,7 @@ class SeatgeekService
   end
 
   def self.events
-    response = conn.get "/type=ncaa_football&q=UCLA&client_id=#{ENV['Client_ID']}"
-    hello = JSON.parse(response.body)
+    response = conn.get "?type=ncaa_football&q=rose-bowl&client_id=#{ENV['Client_ID']}"
+    JSON.parse(response.body)["events"]
   end
 end

@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
   def index
-    @events = SeatgeekService.events
+    @events = Seatgeek.events
   end
 end
