@@ -7,8 +7,9 @@ class SeatgeekService
     end
   end
 
-  def self.events
-    response = conn.get "?type=ncaa_football&q=rose-bowl&client_id=#{ENV['Client_ID']}"
+  def self.events(areana)
+    areana_name = areana["areana"].downcase.gsub(" ", "-")
+    response = conn.get "?type=ncaa_football&q=#{areana_name}&client_id=#{ENV['Client_ID']}"
     JSON.parse(response.body)["events"]
   end
 end
