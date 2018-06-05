@@ -12,5 +12,6 @@ RSpec.describe "SEATGEEK SERVICES" do
       expect(current_path).to eq("/events")
 
       expect(page).to have_content("Fresno State Bulldogs at UCLA Bruins")
+      expect(page).to have_content("September 15th, 2018 19:30")
   end
 end
