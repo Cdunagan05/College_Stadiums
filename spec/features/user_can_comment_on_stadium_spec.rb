@@ -28,7 +28,7 @@ RSpec.describe "When I go to a stadium show page" do
 
     expect(page).to have_content("Signup or Login to Comment!")
     expect(stadium_1.comments.empty?).to eq(true)
-    expect(comment.all.empty?).to eq(true)
+    expect(Comment.all.empty?).to eq(true)
 
   end
 end
