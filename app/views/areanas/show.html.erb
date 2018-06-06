@@ -82,25 +82,31 @@
   </div>
 </div>
 
-<div class="comments-div">
-  <ul class="comments-list">
+<div class="container" id="comments-container">
     <% @areana.comments.each do |c|  %>
-    <li class="comment-on-areana">
-      <p> <b><%= c.user.username %></b></p>
-      <p> <%= c.body %></p>
-      <p><sub>Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago</sub></p>
-      <% end %>
-    </li>
-  </ul>
-</div>
+    <div class="comments-div">
+      <ul class="comments-list">
+        <li><b><%= c.user.username %></b></li>
+        <li><%= c.body %></li>
+        <li><sub>Posted <%= distance_of_time_in_words(Time.now, c.created_at) %> ago</sub></li>
+      </ul>
+    </div>
+    <% end %>
 
-<div>
+<div class="comments-input-div">
+  <ul class="comments-input-lists">
   <%= form_for ([@areana, @areana.comments.build]) do |f| %>
-
-  <%= f.label :body, 'Comment' %>
-  <%= f.text_area :body %>
-
-  <%= f.submit "Add Comment" %>
+    <li>
+      <%= f.label :body, 'Comment Here' %>
+    </li>
+    <li>
+      <%= f.text_area :body %>
+    </li>
+    <li>
+      <%= f.submit "Add Comment" %>
+    </li>
   <% end  %>
-  <%= flash[:warning] %>
+      <%= flash[:warning] %>
+</ul>
+</div>
 </div>

@@ -206,20 +206,28 @@
  }
 
  .comments-div {
-   padding-right: 30px;
-   padding-top: 10px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
  }
 
  .comments-list {
    list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   border-style: hidden;
+   border-radius: 4px;
+   background-color: white;
  }
 
- .comment-on-areana {
-   width: 70%;
-   margin-left: auto;
-   margin-right: auto;
-   border-bottom: dashed;
-   background: #ececec;
+ .comments-list li {
+   padding-bottom: 5px;
+   padding-left: 2px;
+   padding-right: 2px;
  }
 
  .rate-stadium-list {
@@ -235,5 +243,33 @@
  }
 
  .bucketlist-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+   background-color: #f2f2f2;
+ }
+
+ .comments-input-div{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+ }
+
+ .comments-input-lists {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+
+ .comments-input-lists li {
+   padding-bottom: 5px
+ }
+
+ #comment_body {
+   width: 100%;
+ }
+
+ #comments-container {
+   padding-top: 10px;
  }
