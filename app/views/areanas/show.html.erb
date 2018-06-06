@@ -59,7 +59,6 @@
               <option value="1_Star">1 Star</option>
             </select>
 
-            <%= f.hidden_field :user_id, {value: current_user.id} %>
             <%= f.submit "submit"%>
           <% end %>
         </li>
@@ -103,4 +102,5 @@
 
   <%= f.submit "Add Comment" %>
   <% end  %>
+  <%= flash[:warning] %>
 </div>
