@@ -20,16 +20,18 @@
           <li>
             <a href="/user_page">Home</a>
           </li>
-          <li>
-            <a href="/signup">Sign Up</a>
-          </li>
-          <li>
-            <% if current_user %>
+          <% if current_user %>
+            <li>
               <%= link_to "Signout", logout_path, method: "delete" %>
-            <% else %>
-              <a href="/login">Login Now</a>
-            <% end  %>
-          </li>
+            </li>
+          <% else %>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+            <li>
+                <a href="/login">Login Now</a>
+            </li>
+          <% end  %>
         </ul>
     <%= yield %>
   </body>
