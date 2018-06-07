@@ -277,3 +277,7 @@
  .team-button {
    cursor: pointer;
  }
+
+ .all-stadium-toggle-btns {
+   padding-left: 13%;
+ }
