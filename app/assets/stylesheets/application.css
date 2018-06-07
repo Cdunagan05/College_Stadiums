@@ -193,6 +193,11 @@
    float: left;
  }
 
+ .navbar-unordered li:last-child {
+   float: right;
+   padding-top: 7px;
+ }
+
  .navbar-unordered li a {
     display: block;
     color: white;
