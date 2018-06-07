@@ -6,7 +6,7 @@ class AreanasController < ApplicationController
   end
 
   def index
-    @areanas = Areana.all
+    @areanas = Areana.all.order("name asc")
   end
 
   def new
