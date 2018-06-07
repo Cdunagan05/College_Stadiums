@@ -273,3 +273,11 @@
  #comments-container {
    padding-top: 10px;
  }
+
+ .team-button {
+   cursor: pointer;
+ }
+
+ .all-stadium-toggle-btns {
+   padding-left: 13%;
+ }
