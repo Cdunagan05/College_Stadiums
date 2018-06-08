@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/game' => 'games#show'
 
+  get '/search' => 'search#show'
+
   resources :areanas do
     resources :ratings, only: [:create]
     resources :comments, only: [:create, :edit, :update, :destroy]
