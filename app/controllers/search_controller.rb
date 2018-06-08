@@ -1,12 +1,13 @@
 class SearchController < ApplicationController
   def show
-    areana = Areana.find(search_params)
+    areana = Areana.find_by(name: search_params["name"])
+    redirect_to areana_path(areana.id)
   end
 
   private
 
   def search_params
-    byebug
+    params.permit(:name)
   end
 
 end
