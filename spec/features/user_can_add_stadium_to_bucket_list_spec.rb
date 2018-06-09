@@ -31,4 +31,14 @@ RSpec.describe "When a user clicks on add to bucketlist" do
     expect(page).to have_content("This stadium is already in your Bucketlist!")
     expect(user.areanas.count).to eq(1)
   end
+
+  scenario "stadium is not added if user is not logged in" do
+    areana_1 = Areana.create(name: 'The Rose Bowl', capacity: 104000, state: 'Ca', city: 'Pasadena' )
+
+    visit "/areanas/#{areana_1.id}"
+
+    click_on "Add to Bucketlist"
+
+    expect(page).to have_content("Login or Sign up to add this stadium to your bucketlist")
+  end
 end
