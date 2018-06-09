@@ -3,8 +3,12 @@ class RatingsController < ApplicationController
   def create
     areana = Areana.find(params[:areana_id])
     areana.ratings.create(ratings_params)
-    areana.ratings.update(user_id: current_user.id)
-    areana.ratings[0].save
+    if current_user
+      areana.ratings.update(user_id: current_user.id)
+      areana.ratings[0].save
+    else
+      flash[:error] = "Login or Sign up to rate this stadium"
+    end
     redirect_to areana_path(areana)
   end
 
