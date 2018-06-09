@@ -14,6 +14,12 @@ Areana.create(name: "Bryant-Denny Stadium", capacity: 101000, state: "Alabama", 
 Areana.create(name: "Neyland Stadium", capacity: 102000, state: "Tennessee", city: "Knoxville", conference: "SEC")
 Areana.create(name: "Williams-Brice Stadium", capacity: 80000, state: "South Carolina", city: "Columbia", conference: "SEC")
 Areana.create(name: "LSU Tiger Stadium", capacity: 102000, state: "Louisiana", city: "Baton Rouge", conference: "SEC")
+Areana.create(name: "Razorback Stadium", capacity: 72000, state: "Arkansas", city: "Fayetteville", conference: "SEC")
+Areana.create(name: "Faurot Field", capacity: 71000, state: "Missouri", city: "Columbia", conference: "SEC")
+Areana.create(name: "Vaught Hemingway Stadium", capacity: 64000, state: "Mississippi", city: "Oxford", conference: "SEC")
+Areana.create(name: "Davis Wade Stadium", capacity: 61000, state: "Mississippi", city: "Starkville", conference: "SEC")
+Areana.create(name: "Kroger Field", capacity: 61000, state: "Kentucky", city: "Lexington", conference: "SEC")
+Areana.create(name: "Vanderbilt Stadium", capacity: 40000, state: "Tennessee", city: "Nashville", conference: "SEC")
 
 
 
