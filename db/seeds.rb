@@ -51,9 +51,20 @@ Areana.create(name: "Alumni Stadium", capacity: 44500, state: "Massachusetts", c
 Areana.create(name: "Wallace Wade Stadium", capacity: 40000, state: "North Carolina", city: "Durham", conference: "ACC")
 Areana.create(name: "BB&T Field", capacity: 31500, state: "North Carolina", city: "Winston-Salem", conference: "ACC")
 
+Areana.create(name: "Darrel K. Royal-Texas Memorial Stadium", capacity: 102000, state: "Texas", city: "Austin", conference: "Big 12")
+Areana.create(name: "Gaylord Family-Oklahoma Memorial Stadium", capacity: 86000, state: "Oklahoma", city: "Norman", conference: "Big 12")
+Areana.create(name: "Jack Trice Stadium", capacity: 61500, state: "Iowa", city: "Ames", conference: "Big 12")
+Areana.create(name: "Jones AT&T Stadium", capacity: 61000, state: "Texas", city: "Lubbock", conference: "Big 12")
+Areana.create(name: "Boone Pickens Stadium", capacity: 60000, state: "Oklahoma", city: "Stillwater", conference: "Big 12")
+Areana.create(name: "Mountaineer Field", capacity: 60000, state: "West Virginia", city: "Morgantown", conference: "Big 12")
+Areana.create(name: "Memorial Stadium", capacity: 50000, state: "Kansas", city: "Lawrence", conference: "Big 12")
+Areana.create(name: "Bill Snyder Family Stadium", capacity: 50000, state: "Kansas", city: "Manhattan", conference: "Big 12")
+Areana.create(name: "McLane Stadium", capacity: 45000, state: "Texas", city: "Waco", conference: "Big 12")
+Areana.create(name: "Amon G. Carter Stadium", capacity: 45000, state: "Texas", city: "Fort Worth", conference: "Big 12")
 
-Areana.create(name: "Darrel K Royal-Texas Memorial Stadium", capacity: 102000, state: "Texas", city: "College Austin", conference: "Big 12")
-Areana.create(name: "Gaylord Family", capacity: 86000, state: "Oklahoma", city: "Norman", conference: "Big 12")
+
+
+
 Areana.create(name: "Michigan Stadium", capacity: 107000, state: "Michigan", city: "Ann Arbor", conference: "Big 10")
 Areana.create(name: "Beaver Stadium", capacity: 106000, state: "Pennsylvania", city: "University Park", conference: "Big 10")
 Areana.create(name: "Notre Dame Stadium", capacity: 77000, state: "Indiana", city: "South Bend", conference: "Independent")
