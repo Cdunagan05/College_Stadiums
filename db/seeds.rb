@@ -57,7 +57,7 @@ Areana.create(name: "Jack Trice Stadium", capacity: 61500, state: "Iowa", city: 
 Areana.create(name: "Jones AT&T Stadium", capacity: 61000, state: "Texas", city: "Lubbock", conference: "Big 12")
 Areana.create(name: "Boone Pickens Stadium", capacity: 60000, state: "Oklahoma", city: "Stillwater", conference: "Big 12")
 Areana.create(name: "Mountaineer Field", capacity: 60000, state: "West Virginia", city: "Morgantown", conference: "Big 12")
-Areana.create(name: "Memorial Stadium", capacity: 50000, state: "Kansas", city: "Lawrence", conference: "Big 12")
+Areana.create(name: "Memorial Stadium Kansas", capacity: 50000, state: "Kansas", city: "Lawrence", conference: "Big 12")
 Areana.create(name: "Bill Snyder Family Stadium", capacity: 50000, state: "Kansas", city: "Manhattan", conference: "Big 12")
 Areana.create(name: "McLane Stadium", capacity: 45000, state: "Texas", city: "Waco", conference: "Big 12")
 Areana.create(name: "Amon G. Carter Stadium", capacity: 45000, state: "Texas", city: "Fort Worth", conference: "Big 12")
