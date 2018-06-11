@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  // var input = document.getElementById('search-bar');
+  // new Awesomplete (input, {
+  //   list: ["Austin, Baltimore, Canada, Arby, Billings, Bath - Room"]
+  // });
+
   // $("#carouselExampleIndicators").carousel();
 
   $(".col-sm").hide();
