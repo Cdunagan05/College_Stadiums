@@ -38,12 +38,6 @@
    width: 390px;
  }
 
- .login-form-d {
-
- }
-
-
-
  .login-form {
    border-bottom: 1px solid #efefef;
    margin: 10px;
@@ -109,9 +103,6 @@
    width: 100px;
    font: bold 15px arial, sans-serif;
    text-shadow:none;
- }
-
- .homepage-body {
  }
 
  .dropbtn {
@@ -194,8 +185,10 @@
  }
 
  .navbar-unordered li:last-child {
+   width: 500px;
    float: right;
    padding-top: 7px;
+   position: relative;
  }
 
  .navbar-unordered li a {
@@ -287,25 +280,30 @@
    padding-left: 13%;
  }
 
- .autocomplete-div {
-   position: relative;
-   display: inline-block;
- }
-
- .autocomplete-results {
-   position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  top: 100%;
-  left: 0;
-  right: 0;
+ #autocomplete-results {
+   position: fixed;
+   list-style-type: none;
+   padding-right: 50px;
  }
 
  .result {
-   padding: 10px;
- cursor: pointer;
- background-color: #fff;
- border-bottom: 1px solid #d4d4d4;
+  width: 300px;
+  overflow: scroll;
+  max-height: 200px;
+  max-width: 300px;
+  min-width: 300px;
+  position:relative;
+  padding: 5px;
+  cursor: pointer;
+  background-color: grey;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 2px;
+  z-index: 99;
+  top: 100%;
+  left: -40px;
+  right: 0;
+ }
+
+ #search-bar {
+   width: 400px;
  }
