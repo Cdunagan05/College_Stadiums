@@ -1,12 +1,6 @@
 $(document).ready(function(){
 
-  // $("#carouselExampleIndicators").carousel();
-
   $(".col-sm").hide();
-
-  // $("#Big12").(function() {
-  //   $(this).css("background", "#ff0")
-  // })
 
   $("#Big12").click(function() {
     $(".col-sm:contains(Big 12)").toggle().promise().done(function(){

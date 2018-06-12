@@ -38,12 +38,6 @@
    width: 390px;
  }
 
- .login-form-d {
-
- }
-
-
-
  .login-form {
    border-bottom: 1px solid #efefef;
    margin: 10px;
@@ -109,9 +103,6 @@
    width: 100px;
    font: bold 15px arial, sans-serif;
    text-shadow:none;
- }
-
- .homepage-body {
  }
 
  .dropbtn {
@@ -194,8 +185,10 @@
  }
 
  .navbar-unordered li:last-child {
+   width: 500px;
    float: right;
    padding-top: 7px;
+   position: relative;
  }
 
  .navbar-unordered li a {
@@ -285,4 +278,51 @@
 
  .all-stadium-toggle-btns {
    padding-left: 13%;
+ }
+
+ #autocomplete-results {
+   position: fixed;
+   list-style-type: none;
+   padding-right: 50px;
+   max-height: 200px;
+   overflow: scroll;
+ }
+
+
+
+ .result {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100px;
+  max-width: 400px;
+  min-width: 400px;
+  position:relative;
+  padding: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  z-index: 99;
+  top: 100%;
+  left: -40px;
+  right: 0;
+ }
+
+ .unordered-stadiums-list li:last-child {
+   float: left;
+ }
+
+ .unordered-stadiums-list li:hover {
+      background-color: #f2f2f2;
+ }
+
+ #search-bar {
+   width: 400px;
+ }
+
+ .auto-div {
+   max-height: 300px;
+   overflow: scroll;
  }
