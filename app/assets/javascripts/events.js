@@ -1,17 +1,6 @@
 $(document).ready(function(){
 
-  // var input = document.getElementById('search-bar');
-  // new Awesomplete (input, {
-  //   list: ["Austin, Baltimore, Canada, Arby, Billings, Bath - Room"]
-  // });
-
-  // $("#carouselExampleIndicators").carousel();
-
   $(".col-sm").hide();
-
-  // $("#Big12").(function() {
-  //   $(this).css("background", "#ff0")
-  // })
 
   $("#Big12").click(function() {
     $(".col-sm:contains(Big 12)").toggle().promise().done(function(){

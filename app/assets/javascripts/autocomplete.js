@@ -55,5 +55,21 @@ function displayMatches(matchList) {
   toggleResults("show");
 }
 
+  // $('.result').on('click', function () {
+  //         var text = this.innerText;
+  //         debugger;
+  //         targetInput.append(text);
+  //     });
+
+
+  $('li').on('click', '#autocomplete-results', function(event) {
+    var text = getEventTarget(event).innerText
+    $("#search-bar").val(text);
+  });
+
+  function getEventTarget(e) {
+    e = e || window.event;
+    return e.target || e.srcElement;
+  }
 
 });
