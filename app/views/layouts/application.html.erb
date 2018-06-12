@@ -32,12 +32,12 @@
                 <a href="/login">Login Now</a>
             </li>
           <% end  %>
-          <li>
+          <li class="last-list-item">
             <form class="form-inline" action="/search" method="GET">
               <div id="auto-div">
                 <input class="form-control mr-sm-2" id="search-bar" type="text" placeholder="Search For Individual Stadium" aria-label="Search" name="name" autocomplete="off">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                <ul id="autocomplete-results"></ul>
+                <ul id="autocomplete-results" class="unordered-stadiums-list"></ul>
               </div>
             </form>
           </li>

@@ -284,24 +284,29 @@
    position: fixed;
    list-style-type: none;
    padding-right: 50px;
+   max-height: 200px;
  }
 
  .result {
   width: 300px;
   overflow: scroll;
-  max-height: 200px;
-  max-width: 300px;
-  min-width: 300px;
+  max-height: 100px;
+  max-width: 400px;
+  min-width: 400px;
   position:relative;
   padding: 5px;
   cursor: pointer;
-  background-color: grey;
-  border-bottom: 1px solid #d4d4d4;
+  background-color: white;
+  border: 1px solid #d4d4d4;
   border-radius: 2px;
   z-index: 99;
   top: 100%;
   left: -40px;
   right: 0;
+ }
+
+ .unordered-stadiums-list li:last-child {
+   float: left;
  }
 
  #search-bar {
