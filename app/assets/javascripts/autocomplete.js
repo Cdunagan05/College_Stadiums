@@ -3,15 +3,12 @@ $(document).ready(function(){
 
 var targetInput = document.getElementById('search-bar');
 var results = document.getElementById('autocomplete-results');
-var stadiumList = ['Texas Stadium', 'Kyle Field', 'The Rose Bowl', 'The Cotton Bowl', 'Minnesota', 'Gaylord Stadium', 'Memorial Stadium'];
+var stadiumList = ['Texas Stadium', 'Kyle Field', 'The Rose Bowl', 'The Cotton Bowl', 'Minnesota', 'Gaylord Stadium', 'Memorial Stadium', 'Tanner Stadium', 'Texas Tech Stadium of the old, the incredibly unwise and the poor'];
 var matches = [];
 
 targetInput.focus();
 
 targetInput.addEventListener("keyup", function(event) {
-
-
-
 
   results.innerHTML = "";
   toggleResults("hide");
@@ -23,6 +20,7 @@ targetInput.addEventListener("keyup", function(event) {
       displayMatches(matches);
     }
   }
+
 });
 
 
@@ -56,5 +54,6 @@ function displayMatches(matchList) {
 
   toggleResults("show");
 }
+
 
 });
