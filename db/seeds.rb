@@ -77,8 +77,18 @@ Areana.create(name: "Maryland Stadium", capacity: 52000, state: "Maryland", city
 Areana.create(name: "TCF Bank Stadium", capacity: 51000, state: "Minnesota", city: "Minneapolis", conference: "Big 10")
 Areana.create(name: "Ryan Field", capacity: 47000, state: "Illinois", city: "Evanston", conference: "Big 10")
 
+Areana.create(name: "Los Angeles Memorial Coliseum", capacity: 93500, state: "California", city: "Los Angeles", conference: "Pac 12")
+Areana.create(name: "Rose Bowl", capacity: 91000, state: "California", city: "Pasadena", conference: "Pac 12")
+Areana.create(name: "Husky Stadium", capacity: 70500, state: "Washington", city: "Seattle", conference: "Pac 12")
+Areana.create(name: "California Memorial Stadium", capacity: 62500, state: "California", city: "Berkeley", conference: "Pac 12")
+Areana.create(name: "Sun Devil Stadium", capacity: 56000, state: "Arizona", city: "Tempe", conference: "Pac 12")
+Areana.create(name: "Arizona Stadium", capacity: 56000, state: "Arizona", city: "Tucson", conference: "Pac 12")
+Areana.create(name: "Autzen Stadium", capacity: 54000, state: "Oregon", city: "Eugene", conference: "Pac 12")
+Areana.create(name: "Stanford Stadium", capacity: 50500, state: "California", city: "Stanford", conference: "Pac 12")
+Areana.create(name: "Folsom Field", capacity: 50000, state: "Colorado", city: "Boulder", conference: "Pac 12")
+Areana.create(name: "Rice-Eccles Stadium", capacity: 46000, state: "Utah", city: "Salt Lake City", conference: "Pac 12")
+Areana.create(name: "Reser Stadium", capacity: 45500, state: "Oregon", city: "Corvallis", conference: "Pac 12")
+Areana.create(name: "Martin Stadium", capacity: 32000, state: "Washington", city: "Pullman", conference: "Pac 12")
 
 
 Areana.create(name: "Notre Dame Stadium", capacity: 77000, state: "Indiana", city: "South Bend", conference: "Independent")
-Areana.create(name: "Husky Stadium", capacity: 70000, state: "Washington", city: "Seattle", conference: "Pac 12")
-Areana.create(name: "Los Angeles Memorial Coliseum", capacity: 93000, state: "California", city: "Los Angeles", conference: "Pac 12")
