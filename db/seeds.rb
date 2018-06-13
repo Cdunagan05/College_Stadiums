@@ -90,5 +90,18 @@ Areana.create(name: "Rice-Eccles Stadium", capacity: 46000, state: "Utah", city:
 Areana.create(name: "Reser Stadium", capacity: 45500, state: "Oregon", city: "Corvallis", conference: "Pac 12")
 Areana.create(name: "Martin Stadium", capacity: 32000, state: "Washington", city: "Pullman", conference: "Pac 12")
 
+Areana.create(name: "Lincoln Financial Field", capacity: 68500, state: "Pennsylvania", city: "Philidelphia", conference: "AAC")
+Areana.create(name: "Raymond James Stadium", capacity: 66000, state: "Florida", city: "Tampa", conference: "AAC")
+Areana.create(name: "Liberty Bowl", capacity: 62000, state: "Tennessee", city: "Memphis", conference: "AAC")
+Areana.create(name: "Dowdy Ficklen Stadium", capacity: 50000, state: "North Carolina", city: "Greenville", conference: "AAC")
+Areana.create(name: "Spectrum Stadium", capacity: 44000, state: "Florida", city: "Orlando", conference: "AAC")
+Areana.create(name: "TDECU Stadium", capacity: 40000, state: "Texas", city: "Houston", conference: "AAC")
+Areana.create(name: "Nippert Stadium", capacity: 40000, state: "Ohio", city: "Cincinnati", conference: "AAC")
+Areana.create(name: "Rentschler Field", capacity: 40000, state: "Connecticut", city: "East Hartford", conference: "AAC")
+Areana.create(name: "Navy-Marine Corps Memorial Stadium", capacity: 34000, state: "Maryland", city: "Annapolis", conference: "AAC")
+Areana.create(name: "Gerald J. Ford Stadium", capacity: 32000, state: "Texas", city: "University Park", conference: "AAC")
+Areana.create(name: "Yulman Stadium", capacity: 30000, state: "Louisiana", city: "New Orleans", conference: "AAC")
+Areana.create(name: "H.A. Chapman Stadium", capacity: 30000, state: "Oklahoma", city: "Tulsa", conference: "AAC")
+
 
 Areana.create(name: "Notre Dame Stadium", capacity: 77000, state: "Indiana", city: "South Bend", conference: "Independent")
