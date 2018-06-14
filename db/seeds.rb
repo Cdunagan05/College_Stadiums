@@ -103,5 +103,8 @@ Areana.create(name: "Gerald J. Ford Stadium", capacity: 32000, state: "Texas", c
 Areana.create(name: "Yulman Stadium", capacity: 30000, state: "Louisiana", city: "New Orleans", conference: "AAC")
 Areana.create(name: "H.A. Chapman Stadium", capacity: 30000, state: "Oklahoma", city: "Tulsa", conference: "AAC")
 
-
-Areana.create(name: "Notre Dame Stadium", capacity: 77000, state: "Indiana", city: "South Bend", conference: "Independent")
+Areana.create(name: "Notre Dame Stadium", capacity: 77500, state: "Indiana", city: "South Bend", conference: "Independent")
+Areana.create(name: "LaVell Edwards Stadium", capacity: 63500, state: "Utah", city: "Provo", conference: "Independent")
+Areana.create(name: "Michie Stadium", capacity: 38000, state: "New York", city: "West Point", conference: "Independent")
+Areana.create(name: "Aggie Memorial Stadium", capacity: 30000, state: "New Mexico", city: "Las Cruces", conference: "Independent")
+Areana.create(name: "Warren McGuirk Alumni Stadium", capacity: 17000, state: "Massachusetts", city: "Hadley", conference: "Independent")
