@@ -285,7 +285,9 @@
    list-style-type: none;
    padding-right: 50px;
    max-height: 200px;
+   max-width: 400px;
    overflow: scroll;
+   z-index: 99;
  }
 
 

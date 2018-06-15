@@ -50,7 +50,7 @@
           <p>Rate This Stadium</p>
         </li>
         <li>
-          <%= flash[:error] %>
+          <%= flash[:warning] %>
           <%= form_for ([@areana, @rating]) do |f| %>
             <select name="score" id="rating-list">
               <option value="5_Star" step="4" type="number">5 Stars</option>

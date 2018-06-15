@@ -7,7 +7,7 @@ class RatingsController < ApplicationController
       areana.ratings.update(user_id: current_user.id)
       areana.ratings[0].save
     else
-      flash[:error] = "Login or Sign up to rate this stadium"
+      flash[:warning] = "Login or Sign up to rate this stadium"
     end
     redirect_to areana_path(areana)
   end
