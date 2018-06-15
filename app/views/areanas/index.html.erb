@@ -25,10 +25,14 @@
 <% @areanas.each do |a| %>
   <div class="col-sm">
     <div class="card" style="width: 18rem;">
-      <div class="card-header">
+      <div class="card-header" id="card-head">
         <%= a.name %>
       </div>
-        <img class="card-img-top" src="http://www.levisstadium.com/wp-content/uploads/2015/09/5D33993-e1442951857632-800x400.jpg" alt="Card image cap">
+      <% if a.images.count == 0  %>
+        <img class="card-img-top" src="http://www.levisstadium.com/wp-content/uploads/2015/09/5D33993-e1442951857632-800x400.jpg" alt="Card image cap" width="300" height="200">
+      <% else %>
+        <img class="card-img-top" src="<%= a.images[0].photo %>" alt="Card image cap" width="300" height="200">
+      <% end  %>
     <div class="card-body">
       <p class="card-title"><b>Capacity: <%= a.capacity %></b></p>
       <p class="location-card" id="location-card-text"><b>Location: <%= a.city %>, <%= a.state %></b><p>
