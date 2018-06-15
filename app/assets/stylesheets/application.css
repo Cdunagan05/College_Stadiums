@@ -315,7 +315,7 @@
  }
 
  .unordered-stadiums-list li:hover {
-      background-color: #f2f2f2;
+   background-color: #f2f2f2;
  }
 
  #search-bar {
@@ -325,4 +325,10 @@
  .auto-div {
    max-height: 300px;
    overflow: scroll;
+ }
+
+ #card-head {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
  }
