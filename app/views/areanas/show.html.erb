@@ -52,7 +52,7 @@
           <font color="green"><%= flash[:success] %></font>
           <font color="red"><%= flash[:error] %></font>
         <li>
-          Rate This Stadium</br>
+          Rate This Stadium
         </li>
         <li>
           <%= form_for ([@areana, @rating]) do |f| %>
@@ -67,10 +67,10 @@
             <%= f.submit "submit"%>
           <% end %>
         </li>
+        <li>
+          The average rating of this stadium is <%= @areana.average_rating %>
         </li>
-          The average rating of this stadium is <%= @areana.average_rating %></br>
-        </li>
-        </li>
+        <li>
           <form action="/bucketlists" method="post">
             <button name="bucket" value="bucketlist">Add to Bucketlist</button>
             <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
