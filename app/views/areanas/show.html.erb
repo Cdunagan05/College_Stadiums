@@ -1,5 +1,6 @@
-<p2><%= @areana.name %> stadium </p2>
-
+<div class="stadium-name-on-show">
+  <p2><%= @areana.name %></p2>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -47,10 +48,13 @@
     <div class="col-md-6">
       <ul class="rate-stadium-list">
         <li>
-          <p>Rate This Stadium</p>
+          <font color="red"><%= flash[:warning] %></font>
+          <font color="green"><%= flash[:success] %></font>
+          <font color="red"><%= flash[:error] %></font>
+        <li>
+          Rate This Stadium
         </li>
         <li>
-          <%= flash[:warning] %>
           <%= form_for ([@areana, @rating]) do |f| %>
             <select name="score" id="rating-list">
               <option value="5_Star" step="4" type="number">5 Stars</option>
@@ -63,12 +67,10 @@
             <%= f.submit "submit"%>
           <% end %>
         </li>
+        <li>
+          The average rating of this stadium is <%= @areana.average_rating %>
         </li>
-          <p> The average rating of this stadium is <%= @areana.average_rating %> </p>
-        </li>
-        </li>
-          <%= flash[:success] %>
-          <%= flash[:error] %>
+        <li>
           <form action="/bucketlists" method="post">
             <button name="bucket" value="bucketlist">Add to Bucketlist</button>
             <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
