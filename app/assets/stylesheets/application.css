@@ -346,3 +346,21 @@
    width: 100%;
    padding: 10px;
  }
+
+ .events-table td, th {
+   border: 2px solid #dddddd;
+   padding: 8px;
+ }
+
+ .events-header-table {
+   text-align: center;
+ }
+
+ .events-table {
+   font-family: arial, sans-serif;
+   width: 100%;
+ }
+
+ .events-table tr:nth-child(even) {
+   background-color: #E0FFFF;
+ }
