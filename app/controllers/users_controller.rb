@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def new
     @user = User.new
   end
@@ -14,7 +15,9 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    unless current_user
+      redirect_to login_path
+    end
   end
 
   def user_params
