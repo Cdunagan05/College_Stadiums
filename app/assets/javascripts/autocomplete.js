@@ -3,7 +3,8 @@ $(document).ready(function(){
 
 var targetInput = document.getElementById('search-bar');
 var results = document.getElementById('autocomplete-results');
-var stadiumList = ['Texas Stadium', 'Kyle Field', 'The Rose Bowl', 'The Cotton Bowl', 'Minnesota', 'Gaylord Stadium', 'Memorial Stadium', 'Tanner Stadium', 'Texas Tech Stadium of the old, the incredibly unwise and the poor'];
+var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Griffin Stadium', 'Bryant-Denny Stadium', 'Neyland Stadium', 'Williams-Brice Stadium',
+                   'LSU Tiger Stadium', 'Razorback Stadium', 'Faurot Field', 'Vaught Hemingway Stadium', 'Davis Wade Stadium', 'Kroger Field', 'Vanderbilt Stadium'];
 var matches = [];
 
 targetInput.focus();
