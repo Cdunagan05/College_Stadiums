@@ -4,7 +4,9 @@ $(document).ready(function(){
 var targetInput = document.getElementById('search-bar');
 var results = document.getElementById('autocomplete-results');
 var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Griffin Stadium', 'Bryant-Denny Stadium', 'Neyland Stadium', 'Williams-Brice Stadium',
-                   'LSU Tiger Stadium', 'Razorback Stadium', 'Faurot Field', 'Vaught Hemingway Stadium', 'Davis Wade Stadium', 'Kroger Field', 'Vanderbilt Stadium'];
+                   'LSU Tiger Stadium', 'Razorback Stadium', 'Faurot Field', 'Vaught Hemingway Stadium', 'Davis Wade Stadium', 'Kroger Field', 'Vanderbilt Stadium',
+                   'Doak Campbell Stadium', 'Clemson Memorial Stadium', 'Heinz Field', 'Lane Stadium', 'Hard Rock Stadium', 'Kenan Memorial Stadium', 'Scott Stadium',
+                   'Carter Finley Stadium', 'Bobby Dodd Stadium', 'Cardinal Stadium', 'Carrier Dome', 'Alumni Stadium', 'Wallace Wade Stadium', 'BB&T Field'];
 var matches = [];
 
 targetInput.focus();
