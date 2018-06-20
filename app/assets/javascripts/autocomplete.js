@@ -8,7 +8,9 @@ var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Gri
                    'Doak Campbell Stadium', 'Clemson Memorial Stadium', 'Heinz Field', 'Lane Stadium', 'Hard Rock Stadium', 'Kenan Memorial Stadium', 'Scott Stadium',
                    'Carter Finley Stadium', 'Bobby Dodd Stadium', 'Cardinal Stadium', 'Carrier Dome', 'Alumni Stadium', 'Wallace Wade Stadium', 'BB&T Field',
                    'Darrel K. Royal-Texas Memorial Stadium', 'Gaylord Family-Oklahoma Memorial Stadium', 'Jack Trice Stadium', 'Jones AT&T Stadium', 'Boone Pickens Stadium',
-                   'Mountaineer Field', 'Memorial Stadium Kansas', 'Bill Snyder Family Stadium', 'McLane Stadium', 'Amon G. Carter Stadium' ];
+                   'Mountaineer Field', 'Memorial Stadium Kansas', 'Bill Snyder Family Stadium', 'McLane Stadium', 'Amon G. Carter Stadium', 'Michigan Stadium', 'Beaver Stadium', 'Ohio Stadium',
+                   'Memorial Stadium Nebraska', 'Camp Randall Stadium', 'Spartan Stadium (Michigan)', 'Kinnick Stadium', 'Memorial Stadium', 'Ross-Ade Stadium', 'Memorial Stadium Indiana',
+                   'High Point Solutions Stadium', 'Maryland Stadium', 'TCF Bank Stadium', 'Ryan Field'];
 var matches = [];
 
 targetInput.focus();
