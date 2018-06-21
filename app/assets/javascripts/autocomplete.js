@@ -13,7 +13,9 @@ var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Gri
                    'High Point Solutions Stadium', 'Maryland Stadium', 'TCF Bank Stadium', 'Ryan Field', 'Los Angeles Memorial Coliseum', 'Rose Bowl', 'Husky Stadium', 'California Memorial Stadium',
                    'Sun Devil Stadium', 'Arizona Stadium', 'Autzen Stadium', 'Stanford Stadium', 'Folsom Field', 'Rice-Eccles Stadium', 'Reser Stadium', 'Martin Stadium', 'Lincoln Financial Field',
                    'Raymond James Stadium', 'Dowdy Ficklen Stadium', 'Liberty Bowl', 'TDECU Stadium', 'Spectrum Stadium', 'Rentschler Field', 'Nippert Stadium', 'Navy-Marine Corps Memorial Stadium',
-                   'Gerald J. Ford Stadium', 'Yulman Stadium', 'H.A. Chapman Stadium'];
+                   'Gerald J. Ford Stadium', 'Yulman Stadium', 'H.A. Chapman Stadium', 'Notre Dame Stadium', 'LaVell Edwards Stadium', 'Michie Stadium', 'Aggie Memorial Stadium',
+                   'Warren McGuirk Alumni Stadium', 'Legion Field', 'Alamodome', 'Sun Bowl', 'Rice Stadium', 'Joan C. Edwards Stadium', 'M.M. Roberts Stadium', 'Johnny Red Floyd Stadium',
+                   'Apogee Stadium', 'FAU Stadium', 'Joe Aillet Stadium', 'Riccardo Silva Stadium', 'L.T. Smith Stadium', 'S.B. Ballard Stadium', 'erry Richardson Stadium'];
 var matches = [];
 
 targetInput.focus();

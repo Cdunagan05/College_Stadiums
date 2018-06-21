@@ -26,4 +26,21 @@ RSpec.describe 'When a user visits a stadium page' do
     expect(page).to have_content('The average rating of this stadium is Unrated')
     expect(page).to have_content('Login or Sign up to rate this stadium')
   end
+
+  scenario 'rating stadium twice overrides previous rating from user' do
+    areana_1 = Areana.create(name: 'Darrell K Royal', capacity: 102000, state: 'Tx', city: 'Austin' )
+    stub_logged_in_user
+
+    visit "/areanas/#{areana_1.id}"
+
+    find('#rating-list').find(:xpath, 'option[1]').select_option
+    click_on "submit"
+
+    expect(page).to have_content("The average rating of this stadium is 5 Stars")
+
+    find('#rating-list').find(:xpath, 'option[5]').select_option
+    click_on "submit"
+
+    expect(page).to have_content("The average rating of this stadium is 1 Star")
+  end
 end
