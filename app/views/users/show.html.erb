@@ -3,11 +3,11 @@
 <div>
   <table class="bucketlist-table">
     <tr>
-      <h5>Stadiums in Bucketlist</h5>
+      <td><h5>Stadiums in Bucketlist</h5></td>
     </tr>
       <% current_user.areanas.each do |f| %>
       <tr>
-        <td> <%= link_to f.name, "/areanas/#{f.id}" %></td><td> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></td>
+        <td> <%= link_to f.name, "/areanas/#{f.id}", class: "bucketlist-stadium-link" %></td><td> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></td>
       </tr>
       <% end  %>
   </table>
