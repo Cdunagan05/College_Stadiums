@@ -41,6 +41,6 @@ RSpec.describe 'When a user visits a stadium page' do
     find('#rating-list').find(:xpath, 'option[5]').select_option
     click_on "submit"
 
-    expect(page).to have_content("The average rating of this stadium is 1 Stars")
+    expect(page).to have_content("The average rating of this stadium is 1 Star")
   end
 end
