@@ -21,9 +21,4 @@ class RatingsController < ApplicationController
   def ratings_params
     params.permit(:score, :areana_id)
   end
-
-  def ratings_params_two
-    params.require(:rating).permit(:user_id)
-  end
-
 end
