@@ -17,7 +17,9 @@ var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Gri
                    'Warren McGuirk Alumni Stadium', 'Legion Field', 'Alamodome', 'Sun Bowl', 'Rice Stadium', 'Joan C. Edwards Stadium', 'M.M. Roberts Stadium', 'Johnny Red Floyd Stadium',
                    'Apogee Stadium', 'FAU Stadium', 'Joe Aillet Stadium', 'Riccardo Silva Stadium', 'L.T. Smith Stadium', 'S.B. Ballard Stadium', 'Jerry Richardson Stadium', 'Kelly/Shorts Stadium',
                    'Rynearson Stadium', 'Waldo Stadium', 'InfroCision Stadium', 'UB Stadium', 'Fred C. Yager Stadium', 'Glass Bowl', 'Dix Stadium', 'Doyt L. Perry Stadium', 'Peden Stadium',
-                   'Huskie Stadium', 'Scheumann Stadium'];
+                   'Huskie Stadium', 'Scheumann Stadium', 'SDCCU Stadium', 'Aloha Stadium', 'Colorado State Stadium', 'Falcon Stadium', 'Dreamstyle Stadium', 'Bulldog Stadium', 'Albertsons Stadium',
+                   'Sam Boyd Stadium', 'CEFCU Stadium', 'War Memorial Stadium', 'Maverik Stadium', 'Mackay Stadium', 'Ladd-Peebles Stadium', 'Cajun Field', 'Centennial Bank Stadium', 'Kidd Brewer Stadium',
+                   'Veterans Memorial Stadium', 'Malone Stadium', 'Allen E. Paulson Stadium', 'Bobcat Stadium', 'Georgia State Stadium', 'Brooks Stadium'];
 var matches = [];
 
 targetInput.focus();
