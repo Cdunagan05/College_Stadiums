@@ -20,4 +20,17 @@ class Areana < ApplicationRecord
       return RATINGS[value]
     end
   end
+
+  def self.rating_ranking
+    find_by_sql ("
+         SELECT
+         areanas.id,
+         name,
+         AVG (score) AS average_score
+         FROM ratings
+         INNER JOIN areanas on areanas.id = ratings.areana_id
+         GROUP BY areanas.id, ratings.areana_id
+         ORDER BY average_score DESC
+       ")
+  end
 end
