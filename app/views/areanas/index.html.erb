@@ -1,4 +1,9 @@
 
+<div>
+  <% @areanas_ranking.each_with_index do |a, i| %>
+    <%= i + 1 %>. <%= a.name %></br>
+  <% end  %>
+
 <div class="all-stadium-toggle-btns">
   <button type="button" class="team-button" id="Big12">Big 12</button>
   <button type="button" class="team-button" id="Pac12">Pac 12</button>
