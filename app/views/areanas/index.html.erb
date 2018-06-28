@@ -1,8 +1,18 @@
 
-<div>
-  <% @areanas_ranking.each_with_index do |a, i| %>
-    <%= i + 1 %>. <%= a.name %></br>
-  <% end  %>
+<div class="rating_ranking_div">
+  <table class="rating_ranking_table">
+    <tr class="rating_ranking_row_header">
+      <th>Rank/Stadium</th>
+      <th>Average Rating</th>
+    </tr>
+      <% @areanas_ranking.each_with_index do |a, i| %>
+    <tr>
+      <td><%= i + 1 %>. <%= a.name %></td>
+      <td><%= a.average_score %></td>
+    </tr>
+      <% end  %>
+  </table>
+</div>
 
 <div class="all-stadium-toggle-btns">
   <button type="button" class="team-button" id="Big12">Big 12</button>
