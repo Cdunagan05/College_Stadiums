@@ -38,6 +38,6 @@ class Areana < ApplicationRecord
                   GROUP BY areanas.id, bucketlists.areana_id
                   ORDER BY total_count DESC
                   LIMIT (10)
-      ")
+                 ")
   end
 end
