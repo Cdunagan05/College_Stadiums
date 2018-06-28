@@ -28,13 +28,12 @@ RSpec.describe "When a user visits stadium index page" do
     user_1 = User.create(email: "cdun@utexa.edu", username: "chase", password: "Texas")
     user_2 = User.create(email: "cdunnnnn@utexa.edu", username: "chassssse", password: "Texxxxxas")
     bucketlist_1 = Bucketlist.create(user_id: user_1.id, areana_id: areana_2.id)
-    bucketlist_1 = Bucketlist.create(user_id: user_2.id, areana_id: areana_2.id)
-    bucketlist_1 = Bucketlist.create(user_id: user_1.id, areana_id: areana_1.id)
+    bucketlist_2 = Bucketlist.create(user_id: user_2.id, areana_id: areana_2.id)
+    bucketlist_3 = Bucketlist.create(user_id: user_1.id, areana_id: areana_1.id)
 
     visit "/areanas"
 
     expect(page).to have_content("1. Rose Bowl")
     expect(page).to have_content("2. Tech Stadium")
-    expect(page).to have_content("3. OU Stadium")
   end
 end
