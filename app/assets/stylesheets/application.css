@@ -375,3 +375,20 @@
    color: black;
    font-family: Georgia, serif;
  }
+
+ .rating_ranking_table tr:nth-child(even) {
+   background-color: #E0FFFF;
+ }
+
+ .rating_ranking_table td, th {
+   border: 2px solid #dddddd;
+   padding: 3px;
+ }
+
+ .rating_ranking_row_header {
+   text-align: center;
+ }
+
+ .rating_ranking_table {
+   font-family: arial, sans-serif;
+ }
