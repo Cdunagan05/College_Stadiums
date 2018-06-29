@@ -30,4 +30,14 @@ class Areana < ApplicationRecord
                    LIMIT (10)
                  ")
   end
+
+  def self.bucketlist_ranking
+    find_by_sql ("SELECT areanas.id, name, COUNT (areanas.id) AS total_count
+                  FROM bucketlists
+                  INNER JOIN areanas on areanas.id = bucketlists.areana_id
+                  GROUP BY areanas.id, bucketlists.areana_id
+                  ORDER BY total_count DESC
+                  LIMIT (10)
+                 ")
+  end
 end

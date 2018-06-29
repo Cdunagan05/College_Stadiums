@@ -376,6 +376,10 @@
    font-family: Georgia, serif;
  }
 
+ .rating_ranking_div {
+   float: left;
+ }
+
  .rating_ranking_table tr:nth-child(even) {
    background-color: #E0FFFF;
  }
@@ -391,4 +395,15 @@
 
  .rating_ranking_table {
    font-family: arial, sans-serif;
+ }
+
+ .rankings_div {
+   padding-top: 5px;
+   margin-left: 190px;
+   width: 70%;
+   height: 400px;
+ }
+
+ .bucket_ranking_div {
+   float: right;
  }
