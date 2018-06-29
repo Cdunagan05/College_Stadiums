@@ -398,6 +398,8 @@
  }
 
  .rankings_div {
+   padding-top: 5px;
+   margin-left: 190px;
    width: 70%;
    height: 400px;
  }
