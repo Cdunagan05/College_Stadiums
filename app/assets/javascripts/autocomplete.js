@@ -21,8 +21,13 @@ var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Gri
                    'Sam Boyd Stadium', 'CEFCU Stadium', 'War Memorial Stadium', 'Maverik Stadium', 'Mackay Stadium', 'Ladd-Peebles Stadium', 'Cajun Field', 'Centennial Bank Stadium', 'Kidd Brewer Stadium',
                    'Veterans Memorial Stadium', 'Malone Stadium', 'Allen E. Paulson Stadium', 'Bobcat Stadium', 'Georgia State Stadium', 'Brooks Stadium'];
 var matches = [];
+var resultsCursor = 0;
 
 targetInput.focus();
+
+// targetInput.addEventListener("keydown", function () {
+//
+// })
 
 targetInput.addEventListener("keyup", function(event) {
 
@@ -34,6 +39,25 @@ targetInput.addEventListener("keyup", function(event) {
 
     if (matches.length > 0) {
       displayMatches(matches);
+    }
+  }
+
+  if ( results.classList.contains( "visible") ) {
+    switch( event.keyCode ) {
+      case 38:
+        if ( resultsCursor > 0 ) {
+          resultsCursor--;
+
+          moveCursor( resultsCursor);
+        }
+        break;
+      case 40:
+        if ( resultsCursor < (matches.length - 1) ) {
+          resultsCursor++;
+
+          moveCursor( resultsCursor);
+        }
+        break;
     }
   }
 
@@ -68,8 +92,18 @@ function displayMatches(matchList) {
     j++;
   }
 
+  moveCursor( resultsCursor );
+
   toggleResults("show");
 }
+
+ function moveCursor(pos) {
+   for ( var x = 0; x < results.children.length; x++ ) {
+     results.children[x].classList.remove( "highlighted" );
+   }
+
+   results.children[pos].classList.add( "highlighted" );
+ }
 
   $('li').on('click', '#autocomplete-results', function(event) {
     var text = getEventTarget(event).innerText
