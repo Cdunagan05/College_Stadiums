@@ -151,7 +151,8 @@
  }
 
  .highlighted {
-    background-color: #ff0;
+   background-color: #ff0;
+   color: red;
 }
 
  .location-card {
