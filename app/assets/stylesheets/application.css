@@ -150,8 +150,9 @@
    background-color: #3e8e41;
  }
 
- .highlight {
-    background: #ff0;
+ .highlighted {
+   background-color: #ff0;
+   color: red;
 }
 
  .location-card {
@@ -299,8 +300,8 @@
    max-width: 400px;
    overflow: scroll;
    z-index: 99;
+   visibility: hidden;
  }
-
 
 
  .result {
@@ -406,4 +407,8 @@
 
  .bucket_ranking_div {
    float: right;
+ }
+
+ #autocomplete-results.visible {
+   visibility: visible;
  }

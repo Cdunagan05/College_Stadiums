@@ -21,8 +21,21 @@ var stadiumList = ['Sanford Stadium', 'Kyle Field', 'Jordan-Hare', 'Ben Hill Gri
                    'Sam Boyd Stadium', 'CEFCU Stadium', 'War Memorial Stadium', 'Maverik Stadium', 'Mackay Stadium', 'Ladd-Peebles Stadium', 'Cajun Field', 'Centennial Bank Stadium', 'Kidd Brewer Stadium',
                    'Veterans Memorial Stadium', 'Malone Stadium', 'Allen E. Paulson Stadium', 'Bobcat Stadium', 'Georgia State Stadium', 'Brooks Stadium'];
 var matches = [];
+var resultsCursor = 0;
 
 targetInput.focus();
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest("results").length === 0) {
+        toggleResults("hide");
+    }
+});
+
+targetInput.addEventListener("keydown", function (event) {
+  if (event.keyCode == "13" ) {
+    event.preventDefault();
+  }
+})
 
 targetInput.addEventListener("keyup", function(event) {
 
@@ -34,6 +47,28 @@ targetInput.addEventListener("keyup", function(event) {
 
     if (matches.length > 0) {
       displayMatches(matches);
+    }
+  }
+
+  if ( results.classList.contains( "visible") ) {
+    switch( event.keyCode ) {
+      case 13:
+        targetInput.value = results.children[resultsCursor].innerHTML;
+        toggleResults("hide");
+        resultsCursor = 0;
+        break;
+      case 38:
+        if ( resultsCursor > 0 ) {
+          resultsCursor--;
+          moveCursor( resultsCursor);
+        }
+        break;
+      case 40:
+        if ( resultsCursor < (matches.length - 1) ) {
+          resultsCursor++;
+          moveCursor( resultsCursor);
+        }
+        break;
     }
   }
 
@@ -50,26 +85,30 @@ function toggleResults(action) {
 
 function getMatches(inputText) {
   var matchList = [];
-
   for ( var i = 0; i < stadiumList.length; i++) {
     if (stadiumList[i].toLowerCase().indexOf(inputText.toLowerCase()) != -1 ) {
       matchList.push(stadiumList[i]);
     }
   }
-
   return matchList;
 }
 
 function displayMatches(matchList) {
   var j = 0;
-
   while (j < matchList.length) {
     results.innerHTML += '<li class="result">' + matchList[j] + '</li>';
     j++;
   }
-
+  moveCursor( resultsCursor );
   toggleResults("show");
 }
+
+ function moveCursor(pos) {
+   for ( var x = 0; x < results.children.length; x++ ) {
+     results.children[x].classList.remove( "highlighted" );
+   }
+   results.children[pos].classList.add( "highlighted" );
+ }
 
   $('li').on('click', '#autocomplete-results', function(event) {
     var text = getEventTarget(event).innerText
