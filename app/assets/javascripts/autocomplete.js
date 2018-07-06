@@ -25,6 +25,12 @@ var resultsCursor = 0;
 
 targetInput.focus();
 
+$(document).on('click', function (e) {
+    if ($(e.target).closest("results").length === 0) {
+        toggleResults("hide");
+    }
+});
+
 targetInput.addEventListener("keydown", function (event) {
   if (event.keyCode == "13" ) {
     event.preventDefault();
