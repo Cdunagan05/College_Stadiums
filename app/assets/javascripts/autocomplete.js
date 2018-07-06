@@ -48,20 +48,18 @@ targetInput.addEventListener("keyup", function(event) {
     switch( event.keyCode ) {
       case 13:
         targetInput.value = results.children[resultsCursor].innerHTML;
-        toggleResults( "hide" );
+        toggleResults("hide");
         resultsCursor = 0;
         break;
       case 38:
         if ( resultsCursor > 0 ) {
           resultsCursor--;
-
           moveCursor( resultsCursor);
         }
         break;
       case 40:
         if ( resultsCursor < (matches.length - 1) ) {
           resultsCursor++;
-
           moveCursor( resultsCursor);
         }
         break;

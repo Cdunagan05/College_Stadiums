@@ -300,8 +300,8 @@
    max-width: 400px;
    overflow: scroll;
    z-index: 99;
+   visibility: hidden;
  }
-
 
 
  .result {
@@ -407,4 +407,8 @@
 
  .bucket_ranking_div {
    float: right;
+ }
+
+ #autocomplete-results.visible {
+   visibility: visible;
  }
