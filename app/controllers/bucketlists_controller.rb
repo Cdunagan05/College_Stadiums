@@ -17,6 +17,10 @@ class BucketlistsController < ApplicationController
     end
   end
 
+  def update
+    
+  end
+
   def destroy
     bucketlist = Bucketlist.find(remove_bucketlist_params[:id])
     bucketlist.delete

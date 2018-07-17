@@ -21,5 +21,5 @@ Rails.application.routes.draw do
 
   resources :events, only: [:index]
 
-  resources :bucketlists, only: [:create, :destroy]
+  resources :bucketlists, only: [:create, :destroy, :update]
 end
