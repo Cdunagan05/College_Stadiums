@@ -17,8 +17,16 @@ class BucketlistsController < ApplicationController
     end
   end
 
+  def update
+    bucketlist = Bucketlist.find(alt_bucketlist_params[:id])
+    bucketlist.update(visited: 1)
+    bucketlist.save
+
+    redirect_to user_page_path
+  end
+
   def destroy
-    bucketlist = Bucketlist.find(remove_bucketlist_params[:id])
+    bucketlist = Bucketlist.find(alt_bucketlist_params[:id])
     bucketlist.delete
 
     redirect_to user_page_path
@@ -30,7 +38,7 @@ class BucketlistsController < ApplicationController
     params.permit(:areana_id)
   end
 
-  def remove_bucketlist_params
+  def alt_bucketlist_params
     params.permit(:id)
   end
 
