@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180523022254) do
+ActiveRecord::Schema.define(version: 20180717023626) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,8 +28,9 @@ ActiveRecord::Schema.define(version: 20180523022254) do
   create_table "bucketlists", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "areana_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "visited",    default: 0
     t.index ["areana_id"], name: "index_bucketlists_on_areana_id", using: :btree
     t.index ["user_id"], name: "index_bucketlists_on_user_id", using: :btree
   end
