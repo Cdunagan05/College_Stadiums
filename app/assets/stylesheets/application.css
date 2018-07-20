@@ -427,3 +427,12 @@
    width: 70%;
    height: 400px;
  }
+
+  .bucketlist-table td, th {
+    border: 2px solid #dddddd;
+    padding: 3px;
+  }
+
+  .bucketlist-table tr:nth-child(even) {
+    background-color: #ffc680
+  }
