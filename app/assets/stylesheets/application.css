@@ -412,3 +412,27 @@
  #autocomplete-results.visible {
    visibility: visible;
  }
+
+ .user-bucket-div {
+   float: left;
+ }
+
+ .user-visited-div {
+   float: right;
+ }
+
+ .user-div {
+   padding-top: 5px;
+   margin-left: 190px;
+   width: 70%;
+   height: 400px;
+ }
+
+  .bucketlist-table td, th {
+    border: 2px solid #dddddd;
+    padding: 3px;
+  }
+
+  .bucketlist-table tr:nth-child(even) {
+    background-color: #ffc680
+  }
