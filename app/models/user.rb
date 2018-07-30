@@ -12,4 +12,5 @@ class User < ApplicationRecord
   def in_bucketlist?(areana)
     areanas.exists?(name: areana.name)
   end
+  
 end
