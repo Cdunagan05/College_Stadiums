@@ -1,6 +1,7 @@
 <h2> Welcome to your homepage, <%= current_user.username %>!</h2>
-<div class="user-div">
-  <div class="user-bucket-div">
+<div class="container">
+ <div class="row">
+  <div class="col-6">
     <table class="bucketlist-table">
       <tr>
         <td align="center" colspan="3"><h5>Stadiums in Bucketlist</h5></td>
@@ -14,18 +15,19 @@
         <% end  %>
     </table>
   </div>
-  <div class="user-visited-div">
-    <table class="bucketlist-table">
-      <tr>
-        <td align="center" colspan="3"><h5>Stadiums Already Visited</h5></td>
-      </tr>
-        <% current_user.areanas.each do |f| %>
-          <% if f.bucketlists.first.visited == 1 %>
-            <tr>
-              <td> <%= link_to f.name, "/areanas/#{f.id}", class: "bucketlist-stadium-link" %></td><td> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></td>
-            </tr>
-          <% end %>
-        <% end  %>
-    </table>
+    <div class="col-6">
+      <table class="bucketlist-table">
+        <tr>
+          <td align="center" colspan="3"><h5>Stadiums Already Visited</h5></td>
+        </tr>
+          <% current_user.areanas.each do |f| %>
+            <% if f.bucketlists.first.visited == 1 %>
+              <tr>
+                <td> <%= link_to f.name, "/areanas/#{f.id}", class: "bucketlist-stadium-link" %></td><td> <%= link_to "Remove", bucketlist_path(f.bucketlists.first.id), method: "delete" %></td>
+              </tr>
+            <% end %>
+          <% end  %>
+      </table>
+    </div>
   </div>
 </div>
