@@ -32,7 +32,7 @@ boston = Areana.create(name: "Alumni Stadium", capacity: 44500, state: "Massachu
 duke = Areana.create(name: "Wallace Wade Stadium", capacity: 40000, state: "North Carolina", city: "Durham", conference: "ACC")
 wake = Areana.create(name: "BB&T Field", capacity: 31500, state: "North Carolina", city: "Winston-Salem", conference: "ACC")
 
-texas = Areana.create(name: "Darrel K. Royal-Texas Memorial Stadium", capacity: 102000, state: "Texas", city: "Austin", conference: "Big 12")
+texas = Areana.create(name: "Darrell K Royal - Texas Memorial Stadium", capacity: 102000, state: "Texas", city: "Austin", conference: "Big 12")
 ou = Areana.create(name: "Gaylord Family-Oklahoma Memorial Stadium", capacity: 86000, state: "Oklahoma", city: "Norman", conference: "Big 12")
 iowast = Areana.create(name: "Jack Trice Stadium", capacity: 61500, state: "Iowa", city: "Ames", conference: "Big 12")
 texastech = Areana.create(name: "Jones AT&T Stadium", capacity: 61000, state: "Texas", city: "Lubbock", conference: "Big 12")

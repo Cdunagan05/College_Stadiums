@@ -248,6 +248,7 @@
  }
 
  .bucketlist-table {
+   margin: 0 auto;
    border-collapse: collapse;
  }
 
@@ -316,7 +317,7 @@
   max-height: 100px;
   max-width: 400px;
   min-width: 400px;
-  position:relative;
+  position: relative;
   padding: 5px;
   cursor: pointer;
   background-color: white;
@@ -381,10 +382,6 @@
    font-family: Georgia, serif;
  }
 
- .rating_ranking_div {
-   float: left;
- }
-
  .rating_ranking_table tr:nth-child(even) {
    background-color: #E0FFFF;
  }
@@ -399,30 +396,12 @@
  }
 
  .rating_ranking_table {
+   margin: 0 auto;
    font-family: arial, sans-serif;
- }
-
- .rankings_div {
-   padding-top: 5px;
-   margin-left: 190px;
-   width: 70%;
-   height: 400px;
- }
-
- .bucket_ranking_div {
-   float: right;
  }
 
  #autocomplete-results.visible {
    visibility: visible;
- }
-
- .user-bucket-div {
-   float: left;
- }
-
- .user-visited-div {
-   float: right;
  }
 
  .user-div {
@@ -440,13 +419,4 @@
 
   .bucketlist-table tr:nth-child(even) {
     background-color: #ffc680
-  }
-
-  #us-map {
-    display: block;
-    position: relative;
-    top: 0;
-    left: 15%;
-    width: 80%;
-    height: 80%;
   }
