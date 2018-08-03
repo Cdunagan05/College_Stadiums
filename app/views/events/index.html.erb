@@ -1,16 +1,16 @@
 <div class="container">
-<table class="events-table">
-  <tr class="events-header-table">
-    <th>Teams</th>
-    <th>Date</th>
-    <th>Buy Tickets</th>
-  </tr>
-<% @events.each do |event| %>
-  <tr>
-    <td><%= event.title %></td>
-    <td><%= event.datetime_local %></td>
-    <td><a href="<%= event.url %>">Tickets</a></td>
-  </tr>
-<% end %>
-</table>
+  <table class="events-table">
+    <tr class="events-header-table">
+      <th>Teams</th>
+      <th>Date</th>
+      <th>Buy Tickets</th>
+    </tr>
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.title %></td>
+      <td><%= event.datetime_local %></td>
+      <td><a href="<%= event.url %>">Tickets</a></td>
+    </tr>
+  <% end %>
+  </table>
 </div>
