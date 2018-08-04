@@ -10,27 +10,4 @@ class AreanasController < ApplicationController
     @areanas_ranking = Areana.rating_ranking
     @areanas_bucketlist_ranking = Areana.bucketlist_ranking
   end
-
-  def new
-
-  end
-
-  def create
-
-  end
-
-  def destroy
-
-  end
-
-  def edit
-
-  end
-
-  def update
-
-  end
-
-
-
 end

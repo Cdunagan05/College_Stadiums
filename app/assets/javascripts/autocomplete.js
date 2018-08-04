@@ -115,6 +115,7 @@ function displayMatches(matchList) {
     $("#search-bar").val(text);
   });
 
+  
   function getEventTarget(e) {
     e = e || window.event;
     return e.target || e.srcElement;
