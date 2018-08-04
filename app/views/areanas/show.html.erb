@@ -85,6 +85,10 @@
   </div>
 </div>
 
+<div>
+  <%= link_to "Next Stadium", areana_path("#{@areana.id + 1}") %>
+</div>
+
 <div class="container" id="comments-container">
     <% @areana.comments.each do |c|  %>
     <div class="comments-div">

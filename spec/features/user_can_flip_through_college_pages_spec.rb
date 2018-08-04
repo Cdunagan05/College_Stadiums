@@ -8,11 +8,11 @@ RSpec.describe "When on a stadium page" do
 
     visit "/areanas/#{areana_1.id}"
 
-    click_on "next_stadium"
+    click_on "Next Stadium"
 
     expect(current_path).to eq("/areanas/#{areana_2.id}")
 
-    click_on "next_stadium"
+    click_on "Next Stadium"
 
     expect(current_path).to eq("/areanas/#{areana_3.id}")
   end
