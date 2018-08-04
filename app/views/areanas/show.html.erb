@@ -86,6 +86,7 @@
 </div>
 
 <div>
+  <%= link_to "Previous Stadium", areana_path("#{@areana.id - 1}") %>
   <%= link_to "Next Stadium", areana_path("#{@areana.id + 1}") %>
 </div>
 
