@@ -85,9 +85,9 @@
   </div>
 </div>
 
-<div>
-  <%= link_to "Previous Stadium", areana_path("#{@areana.id - 1}") %>
-  <%= link_to "Next Stadium", areana_path("#{@areana.id + 1}") %>
+<div class="next_stadium_arrow">
+  <%= link_to "<i class='fa fa-chevron-left' aria-hidden='true'></i>".html_safe, areana_path("#{@areana.id - 1}") %>
+  <%= link_to "<i class='fa fa-chevron-right' aria-hidden='true'></i>".html_safe, areana_path("#{@areana.id + 1}") %>
 </div>
 
 <div class="container" id="comments-container">
