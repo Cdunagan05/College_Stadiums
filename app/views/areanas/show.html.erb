@@ -85,9 +85,15 @@
   </div>
 </div>
 
-<div>
-  <%= link_to "Previous Stadium", areana_path("#{@areana.id - 1}") %>
-  <%= link_to "Next Stadium", areana_path("#{@areana.id + 1}") %>
+<div class="next_stadium_arrow">
+  <div class="row">
+    <div class="col-md-6" id="left-arrow">
+      <%= link_to "<i class='fa fa-chevron-left fa-2x' aria-hidden='true' ></i>".html_safe, areana_path("#{@areana.id - 1}"), :id => "previous_stadium" %>
+    </div>
+    <div class="col-md-6" id="right-arrow">
+      <%= link_to "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>".html_safe, areana_path("#{@areana.id + 1}"), :id=> "next_stadium" %>
+    </div>
+  </div>
 </div>
 
 <div class="container" id="comments-container">

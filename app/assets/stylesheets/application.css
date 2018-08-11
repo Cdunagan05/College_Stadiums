@@ -420,3 +420,12 @@
   .bucketlist-table tr:nth-child(even) {
     background-color: #ffc680
   }
+
+  #left-arrow {
+    padding-left: 40px;
+  }
+
+  #right-arrow {
+    padding-right: 40px;
+    text-align: right;
+  }
