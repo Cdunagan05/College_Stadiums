@@ -429,3 +429,7 @@
     padding-right: 40px;
     text-align: right;
   }
+
+  .add-to-bucketlist-button {
+    cursor: pointer;
+  }

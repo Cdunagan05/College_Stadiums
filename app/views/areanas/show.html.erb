@@ -64,7 +64,7 @@
               <option value="1_Star">1 Star</option>
             </select>
 
-            <%= f.submit "submit"%>
+            <%= f.submit "submit", :class => "submit-button"%>
           <% end %>
         </li>
         <li>
@@ -72,7 +72,7 @@
         </li>
         <li>
           <form action="/bucketlists" method="post">
-            <button name="bucket" value="bucketlist">Add to Bucketlist</button>
+            <button name="bucket" value="bucketlist" class="add-to-bucketlist-button">Add to Bucketlist</button>
             <input type="hidden" id="postId" name="areana_id" value="<%= @areana.id %>">
           </form>
         </li>
