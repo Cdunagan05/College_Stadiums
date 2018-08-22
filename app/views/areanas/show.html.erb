@@ -1,6 +1,5 @@
 <div class="stadium-name-on-show">
-  <p2><%= @areana.name %></p2>
-  <sub><%= @areana.team_name %></sub>
+  <p2><%= @areana.name %></p2></br>
 </div>
 <div class="container">
   <div class="row">
@@ -79,6 +78,9 @@
         </li>
         <li>
           <%= link_to "See Upcoming Games", events_path(:areana => "#{@areana.name}")  %>
+        </li>
+        <li>
+          <b>Team:</b> <%= @areana.team_name %>
         </li>
       </ul>
 
