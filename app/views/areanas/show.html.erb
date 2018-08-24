@@ -80,7 +80,9 @@
           <%= link_to "See Upcoming Games", events_path(:areana => "#{@areana.name}")  %>
         </li>
         <li>
-          <b>Team:</b> <%= @areana.team_name %>
+          <b>Team:</b> <%= @areana.team_name %></br>
+          <b>Capacity:</b> <%= @areana.capacity %></br>
+          <b>Location:</b> <%= @areana.city %>, <%= @areana.state %>
         </li>
       </ul>
 
